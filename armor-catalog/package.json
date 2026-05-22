@@ -1,0 +1,11 @@
+{
+  "name": "bordello-armor-catalog",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "refresh": "node scripts/build-armor-catalog.mjs --refresh",
+    "build": "node scripts/build-armor-catalog.mjs --build",
+    "enrich:nexus": "node scripts/build-armor-catalog.mjs --enrich-nexus --build"
+  }
+}

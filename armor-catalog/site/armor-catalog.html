@@ -1,0 +1,338 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Modding Bordello Armor Catalog</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #12100f;
+      --panel: #1d1917;
+      --panel-2: #26211e;
+      --ink: #f3eee9;
+      --muted: #b7aaa1;
+      --line: #473934;
+      --accent: #a9342c;
+      --accent-2: #d7a94b;
+      --good: #7db88f;
+      --warn: #e0b95e;
+      --bad: #d87972;
+      --chip: #332b27;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--ink);
+      letter-spacing: 0;
+    }
+    a { color: inherit; }
+    .catalog-shell {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 18px 42px;
+    }
+    .catalog-header {
+      display: grid;
+      gap: 16px;
+      grid-template-columns: minmax(0, 1fr) auto;
+      align-items: end;
+      border-bottom: 1px solid var(--line);
+      padding-bottom: 18px;
+    }
+    h1 {
+      margin: 0 0 8px;
+      font-size: clamp(2rem, 4vw, 3.4rem);
+      line-height: 1;
+      font-weight: 760;
+    }
+    .lede {
+      margin: 0;
+      max-width: 760px;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.55;
+    }
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(92px, 1fr));
+      gap: 8px;
+      min-width: 310px;
+    }
+    .stat {
+      border: 1px solid var(--line);
+      background: var(--panel);
+      padding: 10px;
+      border-radius: 8px;
+    }
+    .stat strong {
+      display: block;
+      font-size: 1.35rem;
+      line-height: 1.1;
+    }
+    .stat span {
+      color: var(--muted);
+      font-size: .78rem;
+    }
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(210px, 1fr) repeat(3, minmax(138px, 180px));
+      gap: 10px;
+      margin: 20px 0;
+    }
+    input, select, button {
+      min-height: 42px;
+      border-radius: 8px;
+      border: 1px solid var(--line);
+      background: var(--panel);
+      color: var(--ink);
+      padding: 0 12px;
+      font: inherit;
+    }
+    button {
+      cursor: pointer;
+      background: var(--accent);
+      border-color: #c24a40;
+      font-weight: 700;
+    }
+    button.secondary {
+      background: var(--panel-2);
+      border-color: var(--line);
+    }
+    .result-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      color: var(--muted);
+      margin-bottom: 14px;
+      font-size: .92rem;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+      gap: 14px;
+    }
+    .armor-card {
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+      overflow: hidden;
+      min-width: 0;
+    }
+    .thumb {
+      aspect-ratio: 16 / 10;
+      background: linear-gradient(135deg, #2a2521, #171412);
+      display: grid;
+      place-items: center;
+      overflow: hidden;
+      color: var(--muted);
+      font-size: .86rem;
+      text-align: center;
+      padding: 18px;
+    }
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      display: block;
+    }
+    .card-body {
+      padding: 12px;
+      display: grid;
+      gap: 10px;
+    }
+    .card-title {
+      margin: 0;
+      font-size: 1rem;
+      line-height: 1.25;
+    }
+    .meta {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+    .chip {
+      display: inline-flex;
+      align-items: center;
+      min-height: 24px;
+      border-radius: 999px;
+      background: var(--chip);
+      color: var(--muted);
+      padding: 2px 8px;
+      font-size: .76rem;
+      white-space: nowrap;
+    }
+    .chip.tier { color: var(--ink); border: 1px solid var(--line); }
+    .chip.ready { color: var(--good); }
+    .chip.needs { color: var(--warn); }
+    .nexus-link {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      border-radius: 8px;
+      background: var(--panel-2);
+      border: 1px solid var(--line);
+      text-decoration: none;
+      font-weight: 700;
+    }
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      background: var(--panel);
+    }
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      min-width: 820px;
+    }
+    th, td {
+      padding: 10px;
+      border-bottom: 1px solid var(--line);
+      text-align: left;
+      vertical-align: middle;
+      font-size: .9rem;
+    }
+    th {
+      color: var(--muted);
+      background: var(--panel-2);
+      font-size: .78rem;
+      text-transform: uppercase;
+    }
+    .hidden { display: none !important; }
+    .empty {
+      border: 1px dashed var(--line);
+      border-radius: 8px;
+      padding: 28px;
+      color: var(--muted);
+      text-align: center;
+    }
+    @media (max-width: 780px) {
+      .catalog-header, .toolbar {
+        grid-template-columns: 1fr;
+      }
+      .stats {
+        min-width: 0;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="catalog-shell">
+    <header class="catalog-header">
+      <div>
+        <h1>Armor Catalog</h1>
+        <p class="lede">Browse user-facing armor and clothing mods across JOJ, TOT, HOH, MOM, DOD, and VOV. The catalog is generated from the editable CSV source and keeps Nexus links and screenshot URLs as data.</p>
+      </div>
+      <section class="stats" aria-label="Catalog summary">
+        <div class="stat"><strong>147</strong><span>catalog entries</span></div>
+        <div class="stat"><strong>0</strong><span>ready entries</span></div>
+        <div class="stat"><strong>147</strong><span>need tiers</span></div>
+      </section>
+    </header>
+
+    <section class="toolbar" aria-label="Catalog filters">
+      <input id="search" type="search" placeholder="Search armor, outfit, robe, creator...">
+      <select id="modlist"><option value="">All modlists</option><option value="JOJ">JOJ</option><option value="TOT">TOT</option><option value="HOH">HOH</option><option value="MOM">MOM</option><option value="DOD">DOD</option><option value="VOV">VOV</option></select>
+      <select id="tier"><option value="">All tiers</option><option value="Clothing">Clothing</option><option value="Light">Light</option><option value="Heavy">Heavy</option><option value="Mixed">Mixed</option><option value="Unknown">Unknown</option></select>
+      <button id="toggleView" type="button" class="secondary">Table view</button>
+    </section>
+
+    <div class="result-line">
+      <span id="resultCount"></span>
+      <span>Generated 2026-05-22</span>
+    </div>
+
+    <section id="cards" class="grid" aria-label="Armor cards"></section>
+    <section id="tableView" class="table-wrap hidden" aria-label="Armor table"></section>
+    <section id="empty" class="empty hidden">No catalog entries match the current filters.</section>
+  </main>
+
+  <script>
+    const CATALOG = [{"id":"skyrimspecialedition-163162","name":"(Grimlook33) Night Prowler Bodysuit","canonicalName":"(Grimlook33) Night Prowler Bodysuit","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/163162","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-138426","name":"[Ashtoreth] Frostwardens Regalia","canonicalName":"[Ashtoreth] Frostwardens Regalia","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/138426","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-120954","name":"[Ashtoreth] Maya Instinct Killer","canonicalName":"[Ashtoreth] Maya Instinct Killer","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/120954","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-132260","name":"[ELLE] Bio Spike","canonicalName":"[ELLE] Bio Spike","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/132260","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-83261","name":"[full_inu] Queen Marika's Dress SSE","canonicalName":"[full_inu] Queen Marika's Dress SSE","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/83261","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-145137","name":"4th Unknown's Armors - Sentinel Addon","canonicalName":"4th Unknown's Armors - Sentinel Addon","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/145137","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-109333","name":"Adventurer Armor - My Version SE by Xtudo","canonicalName":"Adventurer Armor - My Version SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/109333","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-91741","name":"Adventurer HDT-SMP Armor","canonicalName":"Adventurer HDT-SMP Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/91741","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-95089","name":"Aegis Anuad","canonicalName":"Aegis Anuad","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/95089","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-165651","name":"Aegyptus","canonicalName":"Aegyptus","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/165651","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-119440","name":"Ancient Bone Armor","canonicalName":"Ancient Bone Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/119440","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-145584","name":"Armor of Clavicus Vile (HDT-SMP)","canonicalName":"Armor of Clavicus Vile (HDT-SMP)","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/145584","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-113809","name":"Armor of Mehrunes Dagon","canonicalName":"Armor of Mehrunes Dagon","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/113809","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-129809","name":"Armor of Nocturnal","canonicalName":"Armor of Nocturnal","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/129809","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-139513","name":"Ashtoreth Frostwardens Regalia Cyb's Edit","canonicalName":"Ashtoreth Frostwardens Regalia Cyb's Edit","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/139513","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-121886","name":"Ashtoreth Spartacus Slave - My patches SE by Xtudo","canonicalName":"Ashtoreth Spartacus Slave - My patches SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/121886","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-86891","name":"Asura's Guard","canonicalName":"Asura's Guard","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/86891","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-76204","name":"Ayleid Stone Piercings","canonicalName":"Ayleid Stone Piercings","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/76204","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-148026","name":"Azure Knight Armor","canonicalName":"Azure Knight Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/148026","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-110420","name":"Balfieran Knight Set","canonicalName":"Balfieran Knight Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/110420","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-111059","name":"Bisquits Pain Bringer","canonicalName":"Bisquits Pain Bringer","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/111059","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-356","name":"Black Mage Armor","canonicalName":"Black Mage Armor SE","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/356","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-170827","name":"Black Widow","canonicalName":"Black Widow","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/170827","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-62751","name":"Bladedancer's Edge","canonicalName":"Bladedancer's Edge","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/62751","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-134752","name":"Callisto HDT-SMP Armor","canonicalName":"Callisto HDT-SMP Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/134752","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-133795","name":"Casual Pirate Outfit","canonicalName":"Casual Pirate Outfit","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/133795","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-135729","name":"Chronomancer Armor","canonicalName":"Chronomancer Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/135729","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-21305","name":"Common Clothes and Armors - 2k Textures","canonicalName":"Common Clothes and Armors - 2k Textures","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/21305","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["TOT"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-134088","name":"Common Clothing Expansion","canonicalName":"Common Clothing Expansion","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/134088","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD","VOV"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-154021","name":"Common Clothing Expansion - Tops and Bottoms and Color Variants","canonicalName":"Common Clothing Expansion - Tops and Bottoms and Color Variants","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/154021","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD","VOV"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-71116","name":"Countess Armor","canonicalName":"Countess Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/71116","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-146397","name":"Crochet Bikini","canonicalName":"Crochet Bikini","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/146397","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-114751","name":"Crown Plate Set","canonicalName":"Crown Plate Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/114751","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-91522","name":"Crowns (House of the Dragon)","canonicalName":"Crowns (House of the Dragon)","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/91522","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-133000","name":"Cultural Bards Full Resolution","canonicalName":"Cultural Bards Full Resolution","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/133000","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-29667","name":"Cyrodiilic Thief Armor","canonicalName":"Cyrodiilic Thief Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/29667","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-104977","name":"Dark Knight Heavy Padded Armor Set WITH HDT SMP","canonicalName":"Dark Knight Heavy Padded Armor Set WITH HDT SMP","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/104977","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-56805","name":"Dovakini Armor LE Textures - Resources","canonicalName":"Dovakini Armor LE Textures - Resources","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/56805","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-128683","name":"Dracania Armor","canonicalName":"Dracania Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/128683","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-50187","name":"DX Crafting Manuals Locations Guide","canonicalName":"DX Crafting Manuals Locations Guide","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/50187","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-109000","name":"Eastern Brassplate Set","canonicalName":"Eastern Brassplate Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/109000","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-109635","name":"Eastern Brassplate Set - SE by Xtudo - ADM patch","canonicalName":"Eastern Brassplate Set - SE by Xtudo - ADM patch","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/109635","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-100401","name":"Easthold Totemic Set","canonicalName":"Easthold Totemic Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/100401","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-110082","name":"Easthold Totemic Set - My Patches SE by Xtudo","canonicalName":"Easthold Totemic Set - My Patches SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/110082","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-134700","name":"Einherjr Armor - My patches SE by Xtudo","canonicalName":"Einherjr Armor - My patches SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/134700","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-153943","name":"ELLE - Dark Assassin","canonicalName":"ELLE - Dark Assassin","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/153943","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-147010","name":"ELLE - Mageali","canonicalName":"ELLE - Mageali","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/147010","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-108088","name":"Ellxe Wicked Corruption","canonicalName":"Ellxe Wicked Corruption","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/108088","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-146083","name":"Elven Sentry Armor","canonicalName":"Elven Sentry Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/146083","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-142291","name":"Elvenia Armor","canonicalName":"Elvenia Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/142291","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-136947","name":"Endless Misery Bodysuit","canonicalName":"Endless Misery Bodysuit","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/136947","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-145242","name":"Eyepatch and Eyewear Collection","canonicalName":"Eyepatch and Eyewear Collection","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/145242","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-114629","name":"Eyren Ambassador of Darkness","canonicalName":"Eyren Ambassador of Darkness","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/114629","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-95009","name":"Fleet Knight Set","canonicalName":"Fleet Knight Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/95009","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-135528","name":"Girl's Travel Outfit - With inner removed","canonicalName":"Girl's Travel Outfit - With inner removed","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/135528","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-115653","name":"Glasses Pack Vol.1","canonicalName":"Glasses Pack Vol.1","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/115653","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-120188","name":"Gold and Silver Reading Glasses","canonicalName":"Gold and Silver Reading Glasses","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/120188","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-22671","name":"Guards Armor Replacer SSE","canonicalName":"Guards Armor Replacer SSE","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/22671","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD","VOV"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-153775","name":"Heels Sound - 2025 Edition","canonicalName":"Heels Sound - 2025 Edition","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/153775","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD","VOV"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-122633","name":"Heels Sound Volume 2025","canonicalName":"Heels Sound Volume 2025","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/122633","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD","VOV"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-110975","name":"Heimu Dudou","canonicalName":"Heimu Dudou","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/110975","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-77615","name":"Hermes' Silver Mask (Arslan Senki)","canonicalName":"Hermes' Silver Mask (Arslan Senki)","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/77615","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-105659","name":"Illusive Infiltrator Armor","canonicalName":"Illusive Infiltrator Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/105659","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-108425","name":"Illusive Infiltrator Armor - SE by Xtudo - 2K","canonicalName":"Illusive Infiltrator Armor - SE by Xtudo - 2K","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/108425","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-88099","name":"Infantry Armor","canonicalName":"Infantry Armor SE","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/88099","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-143045","name":"Iron Rose Armor","canonicalName":"Iron Rose Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/143045","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-145321","name":"Knight-Herald armor set 4K-2K res - CBBE 3BA","canonicalName":"Knight-Herald armor set 4K-2K res - CBBE 3BA","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/145321","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-79226","name":"Kvetchi Mercenary Set","canonicalName":"Kvetchi Mercenary Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/79226","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-164787","name":"Lady Ritual","canonicalName":"Lady Ritual","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/164787","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-131645","name":"Lavatera Armor","canonicalName":"Lavatera Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/131645","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-152660","name":"Lilyrim Naraka Bladepoint Mingyao Tidal Clash","canonicalName":"Lilyrim Naraka Bladepoint Mingyao Tidal Clash","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/152660","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-128173","name":"Mage Clothing Expansion","canonicalName":"Mage Clothing Expansion","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/128173","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD","VOV"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-40217","name":"Maid Outfits","canonicalName":"Maid Outfits SE","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/40217","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-91506","name":"Maormer Seascale Set","canonicalName":"Maormer Seascale Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/91506","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-91576","name":"Maormer Seascale Set - My Patches SE by Xtudo","canonicalName":"Maormer Seascale Set - My Patches SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/91576","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-152508","name":"Merchantress Outfit - Main File","canonicalName":"Merchantress Outfit - Main File","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/152508","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-82495","name":"Moon Monk's Robes","canonicalName":"Moon Monk's Robes","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/82495","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-149259","name":"More Scarves","canonicalName":"More Scarves","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/149259","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-99717","name":"N.U.D.E. powered by Underwear.dll","canonicalName":"N.U.D.E. powered by Underwear.dll","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/99717","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["TOT"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-24621","name":"Nightingale Clean Set","canonicalName":"Nightingale Clean Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/24621","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-133857","name":"Nirn Necessities - SE by Xtudo - 2K textures","canonicalName":"Nirn Necessities - SE by Xtudo - 2K textures","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/133857","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-110922","name":"Nord Steelheart Armor","canonicalName":"Nord Steelheart Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/110922","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-63772","name":"Northern God Armor","canonicalName":"Northern God Armor SE","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/63772","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-121333","name":"Primal Dragonslayer Armor","canonicalName":"Primal Dragonslayer Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/121333","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-73138","name":"Regalia of the Scorned","canonicalName":"Regalia of the Scorned","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/73138","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-155532","name":"Ribbon Outfit","canonicalName":"Ribbon Outfit","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/155532","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-120576","name":"Rihad Swordsman Set","canonicalName":"Rihad Swordsman Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/120576","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-122125","name":"Rihad Swordsman Set - My patches SE by Xtudo","canonicalName":"Rihad Swordsman Set - My patches SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/122125","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-107904","name":"River Watch Set","canonicalName":"River Watch Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/107904","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-108749","name":"River Watch Set - My patches SE by Xtudo","canonicalName":"River Watch Set - My patches SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/108749","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-135136","name":"Riverfolk Clothes Set","canonicalName":"Riverfolk Clothes Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/135136","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-122469","name":"Rolling Waves","canonicalName":"Rolling Waves","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/122469","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-126983","name":"Rover Armor","canonicalName":"Rover Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/126983","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-120373","name":"Royal Vanguard Armor","canonicalName":"Royal Vanguard Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/120373","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-40606","name":"Rugged Rogue Outfits","canonicalName":"Rugged Rogue Outfits","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/40606","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-76879","name":"Satisfactory Facial Piercings","canonicalName":"Satisfactory Facial Piercings","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/76879","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-129638","name":"Savior's Hide Replacer 2","canonicalName":"Savior's Hide Replacer 2","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/129638","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD","VOV"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-133720","name":"Senecio Armor","canonicalName":"Senecio Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/133720","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-143720","name":"Shas' Chains and Silks","canonicalName":"Shas' Chains and Silks","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/143720","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-133218","name":"Shas' Devil Corset","canonicalName":"Shas' Devil Corset","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/133218","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-120716","name":"Shas' Equipable Hand Nails","canonicalName":"Shas' Equipable Hand Nails","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/120716","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-124243","name":"Shino - Accessories - Magic Creatures","canonicalName":"Shino - Accessories - Magic Creatures","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/124243","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-69920","name":"Silt Strider Armor","canonicalName":"Silt Strider Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/69920","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-79088","name":"Silver Armor","canonicalName":"Silver Armor SE","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/79088","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-131162","name":"Skyforge Twilight Wyvern","canonicalName":"Skyforge Twilight Wyvern","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/131162","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-28978","name":"Smalls","canonicalName":"Smalls","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/28978","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["TOT"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-110894","name":"SMP Earrings and Necklaces","canonicalName":"SMP Earrings and Necklaces","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/110894","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-137725","name":"Sorcerer Outfits","canonicalName":"Sorcerer Outfits","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/137725","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-160108","name":"Speed Buster Heart Girl","canonicalName":"Speed Buster Heart Girl","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/160108","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-125628","name":"Star Guardian","canonicalName":"Star Guardian","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/125628","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-35229","name":"Stoneheart Jewelry SMP","canonicalName":"Stoneheart Jewelry SMP","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/35229","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-100787","name":"Stormcloak Einherjar Armors","canonicalName":"Stormcloak Einherjar Armors","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/100787","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-136041","name":"Thalmor Ceykynd Armors","canonicalName":"Thalmor Ceykynd Armors","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/136041","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-37589","name":"The Alchemist's Vestments","canonicalName":"The Alchemist's Vestments","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/37589","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-99201","name":"The Hinterland Ranger - HDT-SMP","canonicalName":"The Hinterland Ranger - HDT-SMP","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/99201","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-107546","name":"The Hinterland Ranger - My patches SE by Xtudo","canonicalName":"The Hinterland Ranger - My patches SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/107546","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-122550","name":"The Southbound Scouts - HDT-SMP","canonicalName":"The Southbound Scouts - HDT-SMP","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/122550","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-136068","name":"The Southbound Scouts - My patches SE by Xtudo","canonicalName":"The Southbound Scouts - My patches SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/136068","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-69940","name":"Titus Mede I - My version SE-AE - 2K","canonicalName":"Titus Mede I - My version SE-AE - 2K","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/69940","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-142288","name":"Tops And Bottoms - Casual Pirate Separated","canonicalName":"Tops And Bottoms - Casual Pirate Separated","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/142288","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-136007","name":"Tops And Bottoms - Common Clothing Expansion Separated","canonicalName":"Tops And Bottoms - Common Clothing Expansion Separated","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/136007","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD","VOV"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-131319","name":"Tops And Bottoms - Winged Hussar Armor Separated","canonicalName":"Tops And Bottoms - Winged Hussar Armor Separated","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/131319","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-54471","name":"Toughened Traveler Outfit","canonicalName":"Toughened Traveler Outfit","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/54471","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-93138","name":"Traveler's Armor Pack - Main File","canonicalName":"Traveler's Armor Pack - Main File","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/93138","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-140435","name":"Traveler's Armor Pack - My optimized textures SE by Xtudo","canonicalName":"Traveler's Armor Pack - My optimized textures SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/140435","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-120203","name":"Tribal Clothes","canonicalName":"Tribal Clothes","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/120203","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-71182","name":"Twilight Princess Armor Mashup","canonicalName":"Twilight Princess Armor Mashup","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/71182","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-99021","name":"Underwear.dll","canonicalName":"Underwear.dll","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/99021","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["TOT"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-126887","name":"Valenwood Ranger Armor Mashup","canonicalName":"Valenwood Ranger Armor Mashup","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/126887","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-17114","name":"VickusDickus' Khajiiti Apex Armory Reforged","canonicalName":"VickusDickus' Khajiiti Apex Armory Reforged","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/17114","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-124613","name":"Vindicator Armor","canonicalName":"Vindicator Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/124613","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-72325","name":"Viridian Armor - Color Variations dynamic cubemaps","canonicalName":"Viridian Armor - Color Variations dynamic cubemaps","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/72325","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-141457","name":"Volkihar Assasin Outfit","canonicalName":"Volkihar Assasin Outfit","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/141457","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-112641","name":"Wandering Summoner outfit (3BA SMP)","canonicalName":"Wandering Summoner outfit (3BA SMP)","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/112641","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-128851","name":"Wardancer Armor set - 3BA - HDT SMP","canonicalName":"Wardancer Armor set - 3BA - HDT SMP","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/128851","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-103601","name":"Wayrest Sellsword Set","canonicalName":"Wayrest Sellsword Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/103601","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-115935","name":"Wayrest Sellsword Set - My patches SE by Xtudo","canonicalName":"Wayrest Sellsword Set - My patches SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/115935","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-112793","name":"Wayward Knight Set","canonicalName":"Wayward Knight Set","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/112793","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-81085","name":"Wild Witch","canonicalName":"Wild Witch","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/81085","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-40963","name":"Wilderness Witch Outfit","canonicalName":"Wilderness Witch Outfit","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/40963","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-49556","name":"Wilderness Witch Outfit Recolor","canonicalName":"Wilderness Witch Outfit Recolor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/49556","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-60842","name":"Wind Ruler Armor","canonicalName":"Wind Ruler Armor SE","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/60842","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-136189","name":"Wolf Leather Armor","canonicalName":"Wolf Leather Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/136189","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-147529","name":"Woodland Wizard Robes","canonicalName":"Woodland Wizard Robes","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/147529","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-148172","name":"Woodland Wizard Robes - My patches SE by Xtudo","canonicalName":"Woodland Wizard Robes - My patches SE by Xtudo","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/148172","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-104528","name":"Yaldabaoth Armor","canonicalName":"Yaldabaoth Armor","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/104528","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","TOT","HOH","MOM","DOD"],"status":"Needs Weight","notes":""},{"id":"skyrimspecialedition-122169","name":"Yoga Clothes","canonicalName":"Yoga Clothes","tier":"Unknown","nexusUrl":"https://www.nexusmods.com/skyrimspecialedition/mods/122169","imageUrl":"","imageSourceUrl":"","imageRank":"","modlists":["JOJ","HOH","MOM","DOD"],"status":"Needs Weight","notes":""}];
+    const state = { view: "cards" };
+    const els = {
+      search: document.getElementById("search"),
+      modlist: document.getElementById("modlist"),
+      tier: document.getElementById("tier"),
+      cards: document.getElementById("cards"),
+      table: document.getElementById("tableView"),
+      empty: document.getElementById("empty"),
+      resultCount: document.getElementById("resultCount"),
+      toggleView: document.getElementById("toggleView")
+    };
+
+    for (const input of [els.search, els.modlist, els.tier]) input.addEventListener("input", render);
+    els.toggleView.addEventListener("click", () => {
+      state.view = state.view === "cards" ? "table" : "cards";
+      els.toggleView.textContent = state.view === "cards" ? "Table view" : "Card view";
+      render();
+    });
+
+    function filteredEntries() {
+      const query = els.search.value.trim().toLowerCase();
+      const modlist = els.modlist.value;
+      const tier = els.tier.value;
+      return CATALOG.filter((entry) => {
+        const text = [entry.name, entry.canonicalName, entry.notes, entry.modlists.join(" ")].join(" ").toLowerCase();
+        return (!query || text.includes(query))
+          && (!modlist || entry.modlists.includes(modlist))
+          && (!tier || entry.tier === tier);
+      }).sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    function render() {
+      const entries = filteredEntries();
+      els.resultCount.textContent = entries.length + " shown";
+      els.empty.classList.toggle("hidden", entries.length !== 0);
+      els.cards.classList.toggle("hidden", state.view !== "cards" || entries.length === 0);
+      els.table.classList.toggle("hidden", state.view !== "table" || entries.length === 0);
+      if (state.view === "cards") renderCards(entries);
+      else renderTable(entries);
+    }
+
+    function renderCards(entries) {
+      els.cards.innerHTML = entries.map((entry) => `
+        <article class="armor-card">
+          <div class="thumb">${entry.imageUrl ? `<img src="${escapeAttr(entry.imageUrl)}" alt="${escapeAttr(entry.name)} screenshot" loading="lazy" referrerpolicy="no-referrer">` : "Screenshot pending"}</div>
+          <div class="card-body">
+            <h2 class="card-title">${escapeHtml(entry.name)}</h2>
+            <div class="meta">
+              <span class="chip tier">${escapeHtml(entry.tier)}</span>
+              ${entry.modlists.map((modlist) => `<span class="chip">${escapeHtml(modlist)}</span>`).join("")}
+              <span class="chip ${entry.status === "Ready" ? "ready" : "needs"}">${escapeHtml(entry.status)}</span>
+            </div>
+            ${entry.nexusUrl ? `<a class="nexus-link" href="${escapeAttr(entry.nexusUrl)}" target="_blank" rel="noopener noreferrer">Nexus Mods</a>` : ""}
+          </div>
+        </article>`).join("");
+    }
+
+    function renderTable(entries) {
+      els.table.innerHTML = `
+        <table>
+          <thead><tr><th>Mod</th><th>Tier</th><th>Modlists</th><th>Status</th><th>Nexus</th></tr></thead>
+          <tbody>
+            ${entries.map((entry) => `
+              <tr>
+                <td>${escapeHtml(entry.name)}</td>
+                <td>${escapeHtml(entry.tier)}</td>
+                <td>${entry.modlists.map(escapeHtml).join(", ")}</td>
+                <td>${escapeHtml(entry.status)}</td>
+                <td>${entry.nexusUrl ? `<a href="${escapeAttr(entry.nexusUrl)}" target="_blank" rel="noopener noreferrer">Open</a>` : ""}</td>
+              </tr>`).join("")}
+          </tbody>
+        </table>`;
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[char]));
+    }
+    function escapeAttr(value) { return escapeHtml(value); }
+    render();
+  </script>
+</body>
+</html>

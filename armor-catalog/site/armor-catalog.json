@@ -1,0 +1,5211 @@
+{
+  "generatedAt": "2026-05-22T22:36:39.432Z",
+  "source": "data/armor-catalog.csv",
+  "modlists": [
+    {
+      "slug": "joj",
+      "label": "JOJ",
+      "name": "Journals of Jyggalag"
+    },
+    {
+      "slug": "tot",
+      "label": "TOT",
+      "name": "Tomes of Talos"
+    },
+    {
+      "slug": "hoh",
+      "label": "HOH",
+      "name": "Hymns of Hircine"
+    },
+    {
+      "slug": "mom",
+      "label": "MOM",
+      "name": "Mantras of Mara"
+    },
+    {
+      "slug": "dod",
+      "label": "DOD",
+      "name": "Diaries of Dibella"
+    },
+    {
+      "slug": "vov",
+      "label": "VOV",
+      "name": "Visions of Vaermina"
+    }
+  ],
+  "validation": {
+    "totalRows": 534,
+    "publicRows": 147,
+    "readyPublicRows": 0,
+    "missingImages": 147,
+    "unknownWeights": 147,
+    "needsUrl": 0
+  },
+  "entries": [
+    {
+      "catalogId": "skyrimspecialedition-163162",
+      "displayName": "(Grimlook33) Night Prowler Bodysuit",
+      "canonicalModName": "(Grimlook33) Night Prowler Bodysuit",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/163162",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "163162",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-138426",
+      "displayName": "[Ashtoreth] Frostwardens Regalia",
+      "canonicalModName": "[Ashtoreth] Frostwardens Regalia",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/138426",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "138426",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-120954",
+      "displayName": "[Ashtoreth] Maya Instinct Killer",
+      "canonicalModName": "[Ashtoreth] Maya Instinct Killer",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120954",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "120954",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-132260",
+      "displayName": "[ELLE] Bio Spike",
+      "canonicalModName": "[ELLE] Bio Spike",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/132260",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "132260",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: Main Installer",
+        "HOH: Main Installer",
+        "MOM: Main Installer",
+        "DOD: Main Installer"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-83261",
+      "displayName": "[full_inu] Queen Marika's Dress SSE",
+      "canonicalModName": "[full_inu] Queen Marika's Dress SSE",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/83261",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "83261",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-145137",
+      "displayName": "4th Unknown's Armors - Sentinel Addon",
+      "canonicalModName": "4th Unknown's Armors - Sentinel Addon",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/145137",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "145137",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-109333",
+      "displayName": "Adventurer Armor - My Version SE by Xtudo",
+      "canonicalModName": "Adventurer Armor - My Version SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/109333",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "109333",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-91741",
+      "displayName": "Adventurer HDT-SMP Armor",
+      "canonicalModName": "Adventurer HDT-SMP Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91741",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "91741",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-95089",
+      "displayName": "Aegis Anuad",
+      "canonicalModName": "Aegis Anuad",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/95089",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "95089",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-165651",
+      "displayName": "Aegyptus",
+      "canonicalModName": "Aegyptus",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/165651",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "165651",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-119440",
+      "displayName": "Ancient Bone Armor",
+      "canonicalModName": "Ancient Bone Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/119440",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "119440",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.4.0.0",
+        "HOH: 1.4.0.0",
+        "MOM: 1.4.0.0",
+        "DOD: 1.4.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-145584",
+      "displayName": "Armor of Clavicus Vile (HDT-SMP)",
+      "canonicalModName": "Armor of Clavicus Vile (HDT-SMP)",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/145584",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "145584",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: f1.00",
+        "TOT: f1.00",
+        "HOH: f1.00",
+        "MOM: f1.00",
+        "DOD: f1.00"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-113809",
+      "displayName": "Armor of Mehrunes Dagon",
+      "canonicalModName": "Armor of Mehrunes Dagon",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/113809",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "113809",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-129809",
+      "displayName": "Armor of Nocturnal",
+      "canonicalModName": "Armor of Nocturnal",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/129809",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "129809",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-139513",
+      "displayName": "Ashtoreth Frostwardens Regalia Cyb's Edit",
+      "canonicalModName": "Ashtoreth Frostwardens Regalia Cyb's Edit",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/139513",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "139513",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 2.2.0.0",
+        "HOH: 2.2.0.0",
+        "MOM: 2.2.0.0",
+        "DOD: 2.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-121886",
+      "displayName": "Ashtoreth Spartacus Slave - My patches SE by Xtudo",
+      "canonicalModName": "Ashtoreth Spartacus Slave - My patches SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/121886",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "121886",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-86891",
+      "displayName": "Asura's Guard",
+      "canonicalModName": "Asura's Guard",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/86891",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "86891",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-76204",
+      "displayName": "Ayleid Stone Piercings",
+      "canonicalModName": "Ayleid Stone Piercings",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/76204",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "76204",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.6.4.0",
+        "HOH: 1.6.4.0",
+        "MOM: 1.6.4.0",
+        "DOD: 1.6.4.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-148026",
+      "displayName": "Azure Knight Armor",
+      "canonicalModName": "Azure Knight Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/148026",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "148026",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.3.0.0",
+        "HOH: 1.3.0.0",
+        "MOM: 1.3.0.0",
+        "DOD: 1.3.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-110420",
+      "displayName": "Balfieran Knight Set",
+      "canonicalModName": "Balfieran Knight Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110420",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "110420",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-111059",
+      "displayName": "Bisquits Pain Bringer",
+      "canonicalModName": "Bisquits Pain Bringer",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/111059",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "111059",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.3.0.0",
+        "HOH: 1.3.0.0",
+        "MOM: 1.3.0.0",
+        "DOD: 1.3.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-356",
+      "displayName": "Black Mage Armor",
+      "canonicalModName": "Black Mage Armor SE",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/356",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "356",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.10.0.0",
+        "TOT: 1.10.0.0",
+        "HOH: 1.10.0.0",
+        "MOM: 1.10.0.0",
+        "DOD: 1.10.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-170827",
+      "displayName": "Black Widow",
+      "canonicalModName": "Black Widow",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/170827",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "170827",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-62751",
+      "displayName": "Bladedancer's Edge",
+      "canonicalModName": "Bladedancer's Edge",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/62751",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "62751",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.3.0.0",
+        "TOT: 1.3.0.0",
+        "HOH: 1.3.0.0",
+        "MOM: 1.3.0.0",
+        "DOD: 1.3.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-134752",
+      "displayName": "Callisto HDT-SMP Armor",
+      "canonicalModName": "Callisto HDT-SMP Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/134752",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "134752",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-133795",
+      "displayName": "Casual Pirate Outfit",
+      "canonicalModName": "Casual Pirate Outfit",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133795",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "133795",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: f1.01",
+        "TOT: f1.01",
+        "HOH: f1.01",
+        "MOM: f1.01",
+        "DOD: f1.01"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-135729",
+      "displayName": "Chronomancer Armor",
+      "canonicalModName": "Chronomancer Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/135729",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "135729",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.4.0.0",
+        "HOH: 1.4.0.0",
+        "MOM: 1.4.0.0",
+        "DOD: 1.4.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-21305",
+      "displayName": "Common Clothes and Armors - 2k Textures",
+      "canonicalModName": "Common Clothes and Armors - 2k Textures",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/21305",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "21305",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "TOT"
+      ],
+      "sourceSections": [
+        "TOT: Armors & Clothing"
+      ],
+      "sourceVersions": [
+        "TOT: d2025.8.31.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-134088",
+      "displayName": "Common Clothing Expansion",
+      "canonicalModName": "Common Clothing Expansion",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/134088",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "134088",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD",
+        "VOV"
+      ],
+      "sourceSections": [
+        "JOJ: Vanilla Replacers & Addons",
+        "TOT: Armors & Clothing",
+        "HOH: Vanilla Replacers & Addons",
+        "MOM: Vanilla Replacers & Addons",
+        "DOD: Vanilla Replacers & Addons",
+        "VOV: Vanilla Armor & Clothing Replacers"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.7.0.0",
+        "JOJ: 1.2.0.0",
+        "JOJ: 1.1.0.0",
+        "TOT: 1.7.0.0",
+        "TOT: 1.2.0.0",
+        "TOT: 1.1.0.0",
+        "TOT: d2025.8.31.0",
+        "HOH: 1.7.0.0",
+        "HOH: 1.2.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.7.0.0",
+        "MOM: 1.2.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.7.0.0",
+        "DOD: 1.2.0.0",
+        "DOD: 1.1.0.0",
+        "VOV: 1.7.0.0",
+        "VOV: 1.2.0.0",
+        "VOV: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-154021",
+      "displayName": "Common Clothing Expansion - Tops and Bottoms and Color Variants",
+      "canonicalModName": "Common Clothing Expansion - Tops and Bottoms and Color Variants",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/154021",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "154021",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD",
+        "VOV"
+      ],
+      "sourceSections": [
+        "JOJ: Vanilla Replacers & Addons",
+        "TOT: Armors & Clothing",
+        "HOH: Vanilla Replacers & Addons",
+        "MOM: Vanilla Replacers & Addons",
+        "DOD: Vanilla Replacers & Addons",
+        "VOV: Vanilla Armor & Clothing Replacers"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0",
+        "VOV: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-71116",
+      "displayName": "Countess Armor",
+      "canonicalModName": "Countess Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/71116",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "71116",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "JOJ: 1.1.0.0",
+        "TOT: 1.2.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.2.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.2.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.2.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-146397",
+      "displayName": "Crochet Bikini",
+      "canonicalModName": "Crochet Bikini",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/146397",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "146397",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-114751",
+      "displayName": "Crown Plate Set",
+      "canonicalModName": "Crown Plate Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/114751",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "114751",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-91522",
+      "displayName": "Crowns (House of the Dragon)",
+      "canonicalModName": "Crowns (House of the Dragon)",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91522",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "91522",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-133000",
+      "displayName": "Cultural Bards Full Resolution",
+      "canonicalModName": "Cultural Bards Full Resolution",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133000",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "133000",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 2.0.0.0",
+        "TOT: 2.0.0.0",
+        "HOH: 2.0.0.0",
+        "MOM: 2.0.0.0",
+        "DOD: 2.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-29667",
+      "displayName": "Cyrodiilic Thief Armor",
+      "canonicalModName": "Cyrodiilic Thief Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/29667",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "29667",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-104977",
+      "displayName": "Dark Knight Heavy Padded Armor Set WITH HDT SMP",
+      "canonicalModName": "Dark Knight Heavy Padded Armor Set WITH HDT SMP",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/104977",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "104977",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: .6",
+        "TOT: .6",
+        "HOH: .6",
+        "MOM: .6",
+        "DOD: .6"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-56805",
+      "displayName": "Dovakini Armor LE Textures - Resources",
+      "canonicalModName": "Dovakini Armor LE Textures - Resources",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/56805",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "56805",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: f1.02",
+        "HOH: f1.02",
+        "MOM: f1.02",
+        "DOD: f1.02"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-128683",
+      "displayName": "Dracania Armor",
+      "canonicalModName": "Dracania Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/128683",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "128683",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-50187",
+      "displayName": "DX Crafting Manuals Locations Guide",
+      "canonicalModName": "DX Crafting Manuals Locations Guide",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/50187",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "50187",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 2.1.0.0",
+        "HOH: 2.1.0.0",
+        "MOM: 2.1.0.0",
+        "DOD: 2.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-109000",
+      "displayName": "Eastern Brassplate Set",
+      "canonicalModName": "Eastern Brassplate Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/109000",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "109000",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-109635",
+      "displayName": "Eastern Brassplate Set - SE by Xtudo - ADM patch",
+      "canonicalModName": "Eastern Brassplate Set - SE by Xtudo - ADM patch",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/109635",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "109635",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "JOJ: 1.1.0.0",
+        "TOT: 1.0.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.0.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.0.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.0.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-100401",
+      "displayName": "Easthold Totemic Set",
+      "canonicalModName": "Easthold Totemic Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/100401",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "100401",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-110082",
+      "displayName": "Easthold Totemic Set - My Patches SE by Xtudo",
+      "canonicalModName": "Easthold Totemic Set - My Patches SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110082",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "110082",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-134700",
+      "displayName": "Einherjr Armor - My patches SE by Xtudo",
+      "canonicalModName": "Einherjr Armor - My patches SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/134700",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "134700",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.3.0.0",
+        "TOT: 1.3.0.0",
+        "HOH: 1.3.0.0",
+        "MOM: 1.3.0.0",
+        "DOD: 1.3.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-153943",
+      "displayName": "ELLE - Dark Assassin",
+      "canonicalModName": "ELLE - Dark Assassin",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/153943",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "153943",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 2.0.0.0",
+        "HOH: 2.0.0.0",
+        "MOM: 2.0.0.0",
+        "DOD: 2.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-147010",
+      "displayName": "ELLE - Mageali",
+      "canonicalModName": "ELLE - Mageali",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/147010",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "147010",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: Main Installer",
+        "HOH: Main Installer",
+        "MOM: Main Installer",
+        "DOD: Main Installer"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-108088",
+      "displayName": "Ellxe Wicked Corruption",
+      "canonicalModName": "Ellxe Wicked Corruption",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/108088",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "108088",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: Main Installer",
+        "HOH: Main Installer",
+        "MOM: Main Installer",
+        "DOD: Main Installer"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-146083",
+      "displayName": "Elven Sentry Armor",
+      "canonicalModName": "Elven Sentry Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/146083",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "146083",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-142291",
+      "displayName": "Elvenia Armor",
+      "canonicalModName": "Elvenia Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/142291",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "142291",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.3.0.0",
+        "HOH: 1.3.0.0",
+        "MOM: 1.3.0.0",
+        "DOD: 1.3.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-136947",
+      "displayName": "Endless Misery Bodysuit",
+      "canonicalModName": "Endless Misery Bodysuit",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136947",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "136947",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-145242",
+      "displayName": "Eyepatch and Eyewear Collection",
+      "canonicalModName": "Eyepatch and Eyewear Collection",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/145242",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "145242",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-114629",
+      "displayName": "Eyren Ambassador of Darkness",
+      "canonicalModName": "Eyren Ambassador of Darkness",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/114629",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "114629",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-95009",
+      "displayName": "Fleet Knight Set",
+      "canonicalModName": "Fleet Knight Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/95009",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "95009",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-135528",
+      "displayName": "Girl's Travel Outfit - With inner removed",
+      "canonicalModName": "Girl's Travel Outfit - With inner removed",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/135528",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "135528",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 0.9.2.0",
+        "TOT: 0.9.2.0",
+        "HOH: 0.9.2.0",
+        "MOM: 0.9.2.0",
+        "DOD: 0.9.2.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-115653",
+      "displayName": "Glasses Pack Vol.1",
+      "canonicalModName": "Glasses Pack Vol.1",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/115653",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "115653",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-120188",
+      "displayName": "Gold and Silver Reading Glasses",
+      "canonicalModName": "Gold and Silver Reading Glasses",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120188",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "120188",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-22671",
+      "displayName": "Guards Armor Replacer SSE",
+      "canonicalModName": "Guards Armor Replacer SSE",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/22671",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "22671",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD",
+        "VOV"
+      ],
+      "sourceSections": [
+        "JOJ: Vanilla Replacers & Addons",
+        "TOT: Armors & Clothing",
+        "HOH: Vanilla Replacers & Addons",
+        "MOM: Vanilla Replacers & Addons",
+        "DOD: Vanilla Replacers & Addons",
+        "VOV: Vanilla Armor & Clothing Replacers"
+      ],
+      "sourceVersions": [
+        "JOJ: 5.5.0.0a",
+        "TOT: 5.5.0.0a",
+        "HOH: 5.5.0.0a",
+        "MOM: 5.5.0.0a",
+        "DOD: 5.5.0.0a",
+        "VOV: 5.5.0.0a"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-153775",
+      "displayName": "Heels Sound - 2025 Edition",
+      "canonicalModName": "Heels Sound - 2025 Edition",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/153775",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "153775",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD",
+        "VOV"
+      ],
+      "sourceSections": [
+        "JOJ: Vanilla Replacers & Addons",
+        "TOT: Armors & Clothing",
+        "HOH: Vanilla Replacers & Addons",
+        "MOM: Vanilla Replacers & Addons",
+        "DOD: Vanilla Replacers & Addons",
+        "VOV: Vanilla Armor & Clothing Replacers"
+      ],
+      "sourceVersions": [
+        "JOJ: 2.4.0.0",
+        "TOT: 2.4.0.0",
+        "HOH: 2.4.0.0",
+        "MOM: 2.4.0.0",
+        "DOD: 2.4.0.0",
+        "VOV: 2.4.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-122633",
+      "displayName": "Heels Sound Volume 2025",
+      "canonicalModName": "Heels Sound Volume 2025",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122633",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "122633",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD",
+        "VOV"
+      ],
+      "sourceSections": [
+        "JOJ: Vanilla Replacers & Addons",
+        "TOT: Armors & Clothing",
+        "HOH: Vanilla Replacers & Addons",
+        "MOM: Vanilla Replacers & Addons",
+        "DOD: Vanilla Replacers & Addons",
+        "VOV: Vanilla Armor & Clothing Replacers"
+      ],
+      "sourceVersions": [
+        "JOJ: f2025.003",
+        "TOT: f2025.003",
+        "HOH: f2025.003",
+        "MOM: f2025.003",
+        "DOD: f2025.003",
+        "VOV: f2025.003"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-110975",
+      "displayName": "Heimu Dudou",
+      "canonicalModName": "Heimu Dudou",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110975",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "110975",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 2.2.0.0",
+        "HOH: 2.2.0.0",
+        "MOM: 2.2.0.0",
+        "DOD: 2.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-77615",
+      "displayName": "Hermes' Silver Mask (Arslan Senki)",
+      "canonicalModName": "Hermes' Silver Mask (Arslan Senki)",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/77615",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "77615",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-105659",
+      "displayName": "Illusive Infiltrator Armor",
+      "canonicalModName": "Illusive Infiltrator Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/105659",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "105659",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-108425",
+      "displayName": "Illusive Infiltrator Armor - SE by Xtudo - 2K",
+      "canonicalModName": "Illusive Infiltrator Armor - SE by Xtudo - 2K",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/108425",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "108425",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.3.0.0",
+        "TOT: 1.3.0.0",
+        "HOH: 1.3.0.0",
+        "MOM: 1.3.0.0",
+        "DOD: 1.3.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-88099",
+      "displayName": "Infantry Armor",
+      "canonicalModName": "Infantry Armor SE",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/88099",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "88099",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-143045",
+      "displayName": "Iron Rose Armor",
+      "canonicalModName": "Iron Rose Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/143045",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "143045",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-145321",
+      "displayName": "Knight-Herald armor set 4K-2K res - CBBE 3BA",
+      "canonicalModName": "Knight-Herald armor set 4K-2K res - CBBE 3BA",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/145321",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "145321",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "JOJ: 1.3.0.0",
+        "TOT: 1.2.0.0",
+        "TOT: 1.3.0.0",
+        "HOH: 1.2.0.0",
+        "HOH: 1.3.0.0",
+        "MOM: 1.2.0.0",
+        "MOM: 1.3.0.0",
+        "DOD: 1.2.0.0",
+        "DOD: 1.3.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-79226",
+      "displayName": "Kvetchi Mercenary Set",
+      "canonicalModName": "Kvetchi Mercenary Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/79226",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "79226",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-164787",
+      "displayName": "Lady Ritual",
+      "canonicalModName": "Lady Ritual",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/164787",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "164787",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-131645",
+      "displayName": "Lavatera Armor",
+      "canonicalModName": "Lavatera Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/131645",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "131645",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-152660",
+      "displayName": "Lilyrim Naraka Bladepoint Mingyao Tidal Clash",
+      "canonicalModName": "Lilyrim Naraka Bladepoint Mingyao Tidal Clash",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/152660",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "152660",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-128173",
+      "displayName": "Mage Clothing Expansion",
+      "canonicalModName": "Mage Clothing Expansion",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/128173",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "128173",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD",
+        "VOV"
+      ],
+      "sourceSections": [
+        "JOJ: Vanilla Replacers & Addons",
+        "TOT: Armors & Clothing",
+        "HOH: Vanilla Replacers & Addons",
+        "MOM: Vanilla Replacers & Addons",
+        "DOD: Vanilla Replacers & Addons",
+        "VOV: Vanilla Armor & Clothing Replacers"
+      ],
+      "sourceVersions": [
+        "JOJ: 2.0.1.0",
+        "TOT: 2.0.1.0",
+        "TOT: d2025.8.31.0",
+        "HOH: 2.0.1.0",
+        "MOM: 2.0.1.0",
+        "DOD: 2.0.1.0",
+        "VOV: 2.0.1.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-40217",
+      "displayName": "Maid Outfits",
+      "canonicalModName": "Maid Outfits SE",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/40217",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "40217",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-91506",
+      "displayName": "Maormer Seascale Set",
+      "canonicalModName": "Maormer Seascale Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91506",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "91506",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-91576",
+      "displayName": "Maormer Seascale Set - My Patches SE by Xtudo",
+      "canonicalModName": "Maormer Seascale Set - My Patches SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91576",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "91576",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-152508",
+      "displayName": "Merchantress Outfit - Main File",
+      "canonicalModName": "Merchantress Outfit - Main File",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/152508",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "152508",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 2.0.0.0",
+        "TOT: 2.0.0.0",
+        "HOH: 2.0.0.0",
+        "MOM: 2.0.0.0",
+        "DOD: 2.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-82495",
+      "displayName": "Moon Monk's Robes",
+      "canonicalModName": "Moon Monk's Robes",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/82495",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "82495",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-149259",
+      "displayName": "More Scarves",
+      "canonicalModName": "More Scarves",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/149259",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "149259",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-99717",
+      "displayName": "N.U.D.E. powered by Underwear.dll",
+      "canonicalModName": "N.U.D.E. powered by Underwear.dll",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/99717",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "99717",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "TOT"
+      ],
+      "sourceSections": [
+        "TOT: Armors & Clothing"
+      ],
+      "sourceVersions": [
+        "TOT: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-24621",
+      "displayName": "Nightingale Clean Set",
+      "canonicalModName": "Nightingale Clean Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/24621",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "24621",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-133857",
+      "displayName": "Nirn Necessities - SE by Xtudo - 2K textures",
+      "canonicalModName": "Nirn Necessities - SE by Xtudo - 2K textures",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133857",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "133857",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-110922",
+      "displayName": "Nord Steelheart Armor",
+      "canonicalModName": "Nord Steelheart Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110922",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "110922",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-63772",
+      "displayName": "Northern God Armor",
+      "canonicalModName": "Northern God Armor SE",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/63772",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "63772",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-121333",
+      "displayName": "Primal Dragonslayer Armor",
+      "canonicalModName": "Primal Dragonslayer Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/121333",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "121333",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-73138",
+      "displayName": "Regalia of the Scorned",
+      "canonicalModName": "Regalia of the Scorned",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/73138",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "73138",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-155532",
+      "displayName": "Ribbon Outfit",
+      "canonicalModName": "Ribbon Outfit",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/155532",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "155532",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-120576",
+      "displayName": "Rihad Swordsman Set",
+      "canonicalModName": "Rihad Swordsman Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120576",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "120576",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.3.0.0",
+        "TOT: 1.3.0.0",
+        "HOH: 1.3.0.0",
+        "MOM: 1.3.0.0",
+        "DOD: 1.3.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-122125",
+      "displayName": "Rihad Swordsman Set - My patches SE by Xtudo",
+      "canonicalModName": "Rihad Swordsman Set - My patches SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122125",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "122125",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-107904",
+      "displayName": "River Watch Set",
+      "canonicalModName": "River Watch Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/107904",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "107904",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-108749",
+      "displayName": "River Watch Set - My patches SE by Xtudo",
+      "canonicalModName": "River Watch Set - My patches SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/108749",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "108749",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.4.0.0",
+        "TOT: 1.4.0.0",
+        "HOH: 1.4.0.0",
+        "MOM: 1.4.0.0",
+        "DOD: 1.4.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-135136",
+      "displayName": "Riverfolk Clothes Set",
+      "canonicalModName": "Riverfolk Clothes Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/135136",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "135136",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-122469",
+      "displayName": "Rolling Waves",
+      "canonicalModName": "Rolling Waves",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122469",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "122469",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-126983",
+      "displayName": "Rover Armor",
+      "canonicalModName": "Rover Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/126983",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "126983",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-120373",
+      "displayName": "Royal Vanguard Armor",
+      "canonicalModName": "Royal Vanguard Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120373",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "120373",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-40606",
+      "displayName": "Rugged Rogue Outfits",
+      "canonicalModName": "Rugged Rogue Outfits",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/40606",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "40606",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-76879",
+      "displayName": "Satisfactory Facial Piercings",
+      "canonicalModName": "Satisfactory Facial Piercings",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/76879",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "76879",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 0.5.1.0",
+        "TOT: 0.5.1.0",
+        "HOH: 0.5.1.0",
+        "MOM: 0.5.1.0",
+        "DOD: 0.5.1.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-129638",
+      "displayName": "Savior's Hide Replacer 2",
+      "canonicalModName": "Savior's Hide Replacer 2",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/129638",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "129638",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD",
+        "VOV"
+      ],
+      "sourceSections": [
+        "JOJ: Vanilla Replacers & Addons",
+        "TOT: Armors & Clothing",
+        "HOH: Vanilla Replacers & Addons",
+        "MOM: Vanilla Replacers & Addons",
+        "DOD: Vanilla Replacers & Addons",
+        "VOV: Vanilla Armor & Clothing Replacers"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0",
+        "VOV: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-133720",
+      "displayName": "Senecio Armor",
+      "canonicalModName": "Senecio Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133720",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "133720",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-143720",
+      "displayName": "Shas' Chains and Silks",
+      "canonicalModName": "Shas' Chains and Silks",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/143720",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "143720",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-133218",
+      "displayName": "Shas' Devil Corset",
+      "canonicalModName": "Shas' Devil Corset",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133218",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "133218",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-120716",
+      "displayName": "Shas' Equipable Hand Nails",
+      "canonicalModName": "Shas' Equipable Hand Nails",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120716",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "120716",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.3.0",
+        "TOT: 1.0.3.0",
+        "HOH: 1.0.3.0",
+        "MOM: 1.0.3.0",
+        "DOD: 1.0.3.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-124243",
+      "displayName": "Shino - Accessories - Magic Creatures",
+      "canonicalModName": "Shino - Accessories - Magic Creatures",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/124243",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "124243",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-69920",
+      "displayName": "Silt Strider Armor",
+      "canonicalModName": "Silt Strider Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/69920",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "69920",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-79088",
+      "displayName": "Silver Armor",
+      "canonicalModName": "Silver Armor SE",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/79088",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "79088",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-131162",
+      "displayName": "Skyforge Twilight Wyvern",
+      "canonicalModName": "Skyforge Twilight Wyvern",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/131162",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "131162",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 0.43.0.0",
+        "HOH: 0.43.0.0",
+        "MOM: 0.43.0.0",
+        "DOD: 0.43.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-28978",
+      "displayName": "Smalls",
+      "canonicalModName": "Smalls",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/28978",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "28978",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "TOT"
+      ],
+      "sourceSections": [
+        "TOT: Armors & Clothing"
+      ],
+      "sourceVersions": [
+        "TOT: 1.1.4.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-110894",
+      "displayName": "SMP Earrings and Necklaces",
+      "canonicalModName": "SMP Earrings and Necklaces",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110894",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "110894",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-137725",
+      "displayName": "Sorcerer Outfits",
+      "canonicalModName": "Sorcerer Outfits",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/137725",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "137725",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-160108",
+      "displayName": "Speed Buster Heart Girl",
+      "canonicalModName": "Speed Buster Heart Girl",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/160108",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "160108",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-125628",
+      "displayName": "Star Guardian",
+      "canonicalModName": "Star Guardian",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/125628",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "125628",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-35229",
+      "displayName": "Stoneheart Jewelry SMP",
+      "canonicalModName": "Stoneheart Jewelry SMP",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/35229",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "35229",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-100787",
+      "displayName": "Stormcloak Einherjar Armors",
+      "canonicalModName": "Stormcloak Einherjar Armors",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/100787",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "100787",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 2.2.0.0",
+        "TOT: 2.2.0.0",
+        "HOH: 2.2.0.0",
+        "MOM: 2.2.0.0",
+        "DOD: 2.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-136041",
+      "displayName": "Thalmor Ceykynd Armors",
+      "canonicalModName": "Thalmor Ceykynd Armors",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136041",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "136041",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-37589",
+      "displayName": "The Alchemist's Vestments",
+      "canonicalModName": "The Alchemist's Vestments",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/37589",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "37589",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.4.0.0",
+        "TOT: 1.4.0.0",
+        "HOH: 1.4.0.0",
+        "MOM: 1.4.0.0",
+        "DOD: 1.4.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-99201",
+      "displayName": "The Hinterland Ranger - HDT-SMP",
+      "canonicalModName": "The Hinterland Ranger - HDT-SMP",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/99201",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "99201",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: f1.01",
+        "TOT: f1.01",
+        "HOH: f1.01",
+        "MOM: f1.01",
+        "DOD: f1.01"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-107546",
+      "displayName": "The Hinterland Ranger - My patches SE by Xtudo",
+      "canonicalModName": "The Hinterland Ranger - My patches SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/107546",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "107546",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-122550",
+      "displayName": "The Southbound Scouts - HDT-SMP",
+      "canonicalModName": "The Southbound Scouts - HDT-SMP",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122550",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "122550",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: f1.01",
+        "TOT: f1.01",
+        "HOH: f1.01",
+        "MOM: f1.01",
+        "DOD: f1.01"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-136068",
+      "displayName": "The Southbound Scouts - My patches SE by Xtudo",
+      "canonicalModName": "The Southbound Scouts - My patches SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136068",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "136068",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-69940",
+      "displayName": "Titus Mede I - My version SE-AE - 2K",
+      "canonicalModName": "Titus Mede I - My version SE-AE - 2K",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/69940",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "69940",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-142288",
+      "displayName": "Tops And Bottoms - Casual Pirate Separated",
+      "canonicalModName": "Tops And Bottoms - Casual Pirate Separated",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/142288",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "142288",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.2.0",
+        "JOJ: 1.1.1.0",
+        "TOT: 1.1.2.0",
+        "TOT: 1.1.1.0",
+        "HOH: 1.1.2.0",
+        "HOH: 1.1.1.0",
+        "MOM: 1.1.2.0",
+        "MOM: 1.1.1.0",
+        "DOD: 1.1.2.0",
+        "DOD: 1.1.1.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-136007",
+      "displayName": "Tops And Bottoms - Common Clothing Expansion Separated",
+      "canonicalModName": "Tops And Bottoms - Common Clothing Expansion Separated",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136007",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "136007",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD",
+        "VOV"
+      ],
+      "sourceSections": [
+        "JOJ: Vanilla Replacers & Addons",
+        "TOT: Armors & Clothing",
+        "HOH: Vanilla Replacers & Addons",
+        "MOM: Vanilla Replacers & Addons",
+        "DOD: Vanilla Replacers & Addons",
+        "VOV: Vanilla Armor & Clothing Replacers"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0",
+        "VOV: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-131319",
+      "displayName": "Tops And Bottoms - Winged Hussar Armor Separated",
+      "canonicalModName": "Tops And Bottoms - Winged Hussar Armor Separated",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/131319",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "131319",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.3.0.0",
+        "TOT: 1.3.0.0",
+        "HOH: 1.3.0.0",
+        "MOM: 1.3.0.0",
+        "DOD: 1.3.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-54471",
+      "displayName": "Toughened Traveler Outfit",
+      "canonicalModName": "Toughened Traveler Outfit",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/54471",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "54471",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-93138",
+      "displayName": "Traveler's Armor Pack - Main File",
+      "canonicalModName": "Traveler's Armor Pack - Main File",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/93138",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "93138",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-140435",
+      "displayName": "Traveler's Armor Pack - My optimized textures SE by Xtudo",
+      "canonicalModName": "Traveler's Armor Pack - My optimized textures SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/140435",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "140435",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-120203",
+      "displayName": "Tribal Clothes",
+      "canonicalModName": "Tribal Clothes",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120203",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "120203",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.5.0.0",
+        "HOH: 1.5.0.0",
+        "MOM: 1.5.0.0",
+        "DOD: 1.5.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-71182",
+      "displayName": "Twilight Princess Armor Mashup",
+      "canonicalModName": "Twilight Princess Armor Mashup",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/71182",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "71182",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 5.6.0.0",
+        "JOJ: 1.0.0.0",
+        "TOT: 5.6.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 5.6.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 5.6.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 5.6.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-99021",
+      "displayName": "Underwear.dll",
+      "canonicalModName": "Underwear.dll",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/99021",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "99021",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "TOT"
+      ],
+      "sourceSections": [
+        "TOT: Armors & Clothing"
+      ],
+      "sourceVersions": [
+        "TOT: d2025.8.31.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-126887",
+      "displayName": "Valenwood Ranger Armor Mashup",
+      "canonicalModName": "Valenwood Ranger Armor Mashup",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/126887",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "126887",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.4.0.0",
+        "TOT: 1.4.0.0",
+        "HOH: 1.4.0.0",
+        "MOM: 1.4.0.0",
+        "DOD: 1.4.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-17114",
+      "displayName": "VickusDickus' Khajiiti Apex Armory Reforged",
+      "canonicalModName": "VickusDickus' Khajiiti Apex Armory Reforged",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/17114",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "17114",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 2.1.6.0",
+        "TOT: 2.1.6.0",
+        "HOH: 2.1.6.0",
+        "MOM: 2.1.6.0",
+        "DOD: 2.1.6.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-124613",
+      "displayName": "Vindicator Armor",
+      "canonicalModName": "Vindicator Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/124613",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "124613",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-72325",
+      "displayName": "Viridian Armor - Color Variations dynamic cubemaps",
+      "canonicalModName": "Viridian Armor - Color Variations dynamic cubemaps",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/72325",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "72325",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 5.0.0.0",
+        "TOT: 5.0.0.0",
+        "HOH: 5.0.0.0",
+        "MOM: 5.0.0.0",
+        "DOD: 5.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-141457",
+      "displayName": "Volkihar Assasin Outfit",
+      "canonicalModName": "Volkihar Assasin Outfit",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/141457",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "141457",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-112641",
+      "displayName": "Wandering Summoner outfit (3BA SMP)",
+      "canonicalModName": "Wandering Summoner outfit (3BA SMP)",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/112641",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "112641",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.16.0.0",
+        "TOT: 1.16.0.0",
+        "HOH: 1.16.0.0",
+        "MOM: 1.16.0.0",
+        "DOD: 1.16.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-128851",
+      "displayName": "Wardancer Armor set - 3BA - HDT SMP",
+      "canonicalModName": "Wardancer Armor set - 3BA - HDT SMP",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/128851",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "128851",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "JOJ: 1.3.0.0",
+        "TOT: 1.2.0.0",
+        "TOT: 1.3.0.0",
+        "HOH: 1.2.0.0",
+        "HOH: 1.3.0.0",
+        "MOM: 1.2.0.0",
+        "MOM: 1.3.0.0",
+        "DOD: 1.2.0.0",
+        "DOD: 1.3.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-103601",
+      "displayName": "Wayrest Sellsword Set",
+      "canonicalModName": "Wayrest Sellsword Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/103601",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "103601",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-115935",
+      "displayName": "Wayrest Sellsword Set - My patches SE by Xtudo",
+      "canonicalModName": "Wayrest Sellsword Set - My patches SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/115935",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "115935",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-112793",
+      "displayName": "Wayward Knight Set",
+      "canonicalModName": "Wayward Knight Set",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/112793",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "112793",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 130.1.0.0",
+        "HOH: 130.1.0.0",
+        "MOM: 130.1.0.0",
+        "DOD: 130.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-81085",
+      "displayName": "Wild Witch",
+      "canonicalModName": "Wild Witch",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/81085",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "81085",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 0.5.2.0",
+        "TOT: 0.5.2.0",
+        "HOH: 0.5.2.0",
+        "MOM: 0.5.2.0",
+        "DOD: 0.5.2.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-40963",
+      "displayName": "Wilderness Witch Outfit",
+      "canonicalModName": "Wilderness Witch Outfit",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/40963",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "40963",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-49556",
+      "displayName": "Wilderness Witch Outfit Recolor",
+      "canonicalModName": "Wilderness Witch Outfit Recolor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/49556",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "49556",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-60842",
+      "displayName": "Wind Ruler Armor",
+      "canonicalModName": "Wind Ruler Armor SE",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/60842",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "60842",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "TOT: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-136189",
+      "displayName": "Wolf Leather Armor",
+      "canonicalModName": "Wolf Leather Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136189",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "136189",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-147529",
+      "displayName": "Woodland Wizard Robes",
+      "canonicalModName": "Woodland Wizard Robes",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/147529",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "147529",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.1.0.0",
+        "TOT: 1.1.0.0",
+        "HOH: 1.1.0.0",
+        "MOM: 1.1.0.0",
+        "DOD: 1.1.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-148172",
+      "displayName": "Woodland Wizard Robes - My patches SE by Xtudo",
+      "canonicalModName": "Woodland Wizard Robes - My patches SE by Xtudo",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/148172",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "148172",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-104528",
+      "displayName": "Yaldabaoth Armor",
+      "canonicalModName": "Yaldabaoth Armor",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/104528",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "104528",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "TOT",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Immersive",
+        "TOT: Armors & Clothing",
+        "HOH: New Armors & Clothing - Immersive",
+        "MOM: New Armors & Clothing - Immersive",
+        "DOD: New Armors & Clothing - Immersive"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.2.0.0",
+        "TOT: 1.2.0.0",
+        "HOH: 1.2.0.0",
+        "MOM: 1.2.0.0",
+        "DOD: 1.2.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    },
+    {
+      "catalogId": "skyrimspecialedition-122169",
+      "displayName": "Yoga Clothes",
+      "canonicalModName": "Yoga Clothes",
+      "armorWeightTier": "Unknown",
+      "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122169",
+      "nexusGameDomain": "skyrimspecialedition",
+      "nexusModId": "122169",
+      "imageUrl": "",
+      "imageSourceUrl": "",
+      "imageRank": "",
+      "includedInModlists": [
+        "JOJ",
+        "HOH",
+        "MOM",
+        "DOD"
+      ],
+      "sourceSections": [
+        "JOJ: New Armors & Clothing - Exotic",
+        "HOH: New Armors & Clothing - Exotic",
+        "MOM: New Armors & Clothing - Exotic",
+        "DOD: New Armors & Clothing - Exotic"
+      ],
+      "sourceVersions": [
+        "JOJ: 1.0.0.0",
+        "HOH: 1.0.0.0",
+        "MOM: 1.0.0.0",
+        "DOD: 1.0.0.0"
+      ],
+      "status": "Needs Weight",
+      "notes": "",
+      "lastVerified": "2026-05-23"
+    }
+  ]
+}
