@@ -47,6 +47,23 @@ node scripts/build-armor-catalog.mjs --enrich-mo2 --mods-path "D:\Path\To\mods" 
 
 The MO2 scanner reads enabled mods from `modlist.txt`, active plugins from `plugins.txt` when present, matches catalog rows by Nexus `modid` from each mod's `meta.ini` or by folder name, then scans plugin `ARMO` records for vanilla `ArmorLight`, `ArmorHeavy`, and `ArmorClothing` keywords.
 
+## Better Nexus Gallery Images
+
+Nexus GraphQL v2 exposes a mod's main image fields, but not an ordered mod-page gallery by mod ID. The gallery images are available in the logged-in Nexus page HTML under `thumbgallery`, so use the bundled userscript from an authenticated browser session:
+
+1. Install `tools/nexus-gallery-harvester.user.js` in Tampermonkey/Violentmonkey.
+2. Preview this catalog with `node scripts/serve-site.mjs 4173`.
+3. Open `http://127.0.0.1:4173/` in the same browser where Nexus is logged in.
+4. Click `Harvest Nexus galleries`.
+5. Save the downloaded CSV as `data/nexus-gallery-candidates.csv`.
+6. Run:
+
+```powershell
+node scripts/build-armor-catalog.mjs --import-gallery-candidates data/nexus-gallery-candidates.csv --build
+```
+
+The import prefers gallery image 2 over image 1, records all candidates in `notes`, and updates `image_url` only when a row has no manually reviewed image yet or still uses a search thumbnail. After import, use the catalog page to visually review questionable images.
+
 To preview locally:
 
 ```powershell

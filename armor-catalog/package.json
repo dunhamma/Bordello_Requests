@@ -8,6 +8,7 @@
     "build": "node scripts/build-armor-catalog.mjs --build",
     "enrich:mod-search": "node scripts/build-armor-catalog.mjs --enrich-mod-search --build",
     "enrich:mo2": "node scripts/build-armor-catalog.mjs --enrich-mo2 --build",
+    "import:gallery": "node scripts/build-armor-catalog.mjs --import-gallery-candidates data/nexus-gallery-candidates.csv --build",
     "enrich:nexus": "node scripts/build-armor-catalog.mjs --enrich-nexus --build"
   }
 }

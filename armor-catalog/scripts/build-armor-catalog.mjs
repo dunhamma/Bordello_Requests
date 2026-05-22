@@ -52,7 +52,8 @@ const STATUSES = new Set(["Needs URL", "Needs Weight", "Needs Image", "Ready", "
 
 const args = new Set(process.argv.slice(2));
 const shouldRefresh = args.has("--refresh");
-const shouldBuild = args.has("--build") || shouldRefresh || args.has("--enrich-nexus") || args.has("--enrich-mod-search") || args.has("--enrich-mo2");
+const galleryCandidatesPath = getArgValue("--import-gallery-candidates");
+const shouldBuild = args.has("--build") || shouldRefresh || args.has("--enrich-nexus") || args.has("--enrich-mod-search") || args.has("--enrich-mo2") || Boolean(galleryCandidatesPath);
 const shouldEnrichNexus = args.has("--enrich-nexus");
 const shouldEnrichModSearch = args.has("--enrich-mod-search");
 const shouldEnrichMo2 = args.has("--enrich-mo2");
@@ -84,6 +85,11 @@ if (shouldEnrichMo2) {
   await writeCsv(CSV_PATH, rows);
 }
 
+if (galleryCandidatesPath) {
+  rows = await importGalleryCandidates(rows, galleryCandidatesPath);
+  await writeCsv(CSV_PATH, rows);
+}
+
 if (shouldBuild) {
   const validation = validateRows(rows);
   await writeJson(JSON_PATH, rows, validation);
@@ -92,8 +98,8 @@ if (shouldBuild) {
   console.log(`Built ${relative(JSON_PATH)} and ${relative(HTML_PATH)}.`);
 }
 
-if (!shouldRefresh && !shouldBuild && !shouldEnrichNexus && !shouldEnrichMo2) {
-  console.log("Usage: npm run refresh | npm run build | npm run enrich:mod-search | npm run enrich:mo2 | npm run enrich:nexus");
+if (!shouldRefresh && !shouldBuild && !shouldEnrichNexus && !shouldEnrichMo2 && !galleryCandidatesPath) {
+  console.log("Usage: npm run refresh | npm run build | npm run enrich:mod-search | npm run enrich:mo2 | npm run import:gallery | npm run enrich:nexus");
 }
 
 async function readExistingRows() {
@@ -463,6 +469,73 @@ async function enrichRowsWithMo2(sourceRows) {
   });
   console.log(`MO2 scan matched ${matchedRows} catalog rows and applied ${appliedRows} weight tiers.`);
   return enriched;
+}
+
+async function importGalleryCandidates(sourceRows, candidatesPath) {
+  const resolved = path.isAbsolute(candidatesPath) ? candidatesPath : path.join(ROOT, candidatesPath);
+  const text = await fs.readFile(resolved, "utf8");
+  const candidates = parseCsv(text);
+  const byCatalogId = new Map();
+  const byModId = new Map();
+  for (const candidate of candidates) {
+    const normalized = {
+      catalog_id: candidate.catalog_id || "",
+      nexus_mod_id: candidate.nexus_mod_id || "",
+      candidate_rank: Number(candidate.candidate_rank || candidate.rank || 0),
+      image_url: candidate.image_url || candidate.url || "",
+      source_url: candidate.source_url || ""
+    };
+    if (!normalized.image_url) continue;
+    if (normalized.catalog_id) pushCandidate(byCatalogId, normalized.catalog_id, normalized);
+    if (normalized.nexus_mod_id) pushCandidate(byModId, normalized.nexus_mod_id, normalized);
+  }
+  let imported = 0;
+  const enriched = sourceRows.map((row) => {
+    if (row.entry_type !== "Catalog Item" || row.status === "Deprecated") return row;
+    const rowCandidates = byCatalogId.get(row.catalog_id) || byModId.get(row.nexus_mod_id) || [];
+    if (!rowCandidates.length) return row;
+    const chosen = chooseGalleryCandidate(rowCandidates);
+    const next = { ...row };
+    const canReplace = !row.image_url || row.image_rank === "mod-search-thumbnail" || row.image_rank === "primary-metadata";
+    next.notes = mergeNote(stripGalleryNote(row.notes), buildGalleryNote(rowCandidates, chosen));
+    if (canReplace && chosen?.image_url) {
+      next.image_url = chosen.image_url;
+      next.image_source_url = chosen.source_url || row.nexus_url;
+      next.image_rank = `gallery-${chosen.candidate_rank || rowCandidates.indexOf(chosen) + 1}`;
+      next.status = recomputeStatus(next);
+      next.last_verified = todayIso();
+      imported += 1;
+    }
+    return normalizeRow(next);
+  });
+  console.log(`Imported gallery candidates for ${byCatalogId.size || byModId.size} rows; updated ${imported} catalog images.`);
+  return enriched;
+}
+
+function pushCandidate(map, key, candidate) {
+  if (!map.has(key)) map.set(key, []);
+  map.get(key).push(candidate);
+}
+
+function chooseGalleryCandidate(candidates) {
+  const sorted = [...candidates].sort((a, b) => (a.candidate_rank || 999) - (b.candidate_rank || 999));
+  return sorted.find((candidate) => candidate.candidate_rank === 2) || sorted[0];
+}
+
+function buildGalleryNote(candidates, chosen) {
+  const urls = candidates
+    .sort((a, b) => (a.candidate_rank || 999) - (b.candidate_rank || 999))
+    .slice(0, 8)
+    .map((candidate) => `${candidate.candidate_rank}:${candidate.image_url}`)
+    .join(" ");
+  return `Gallery candidates imported; chosen rank ${chosen?.candidate_rank || "n/a"}; candidates ${urls}`;
+}
+
+function stripGalleryNote(note) {
+  return String(note || "")
+    .split(" | ")
+    .filter((part) => !part.startsWith("Gallery candidates imported;"))
+    .join(" | ");
 }
 
 async function scanMo2Instance() {
