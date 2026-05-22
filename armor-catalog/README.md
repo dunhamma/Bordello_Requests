@@ -73,6 +73,12 @@ node scripts/serve-site.mjs 4173
 
 Then open `http://127.0.0.1:4173/`.
 
+To install the gallery harvester in your normal Nexus-authenticated browser, open:
+
+```text
+http://127.0.0.1:4173/gallery-setup.html
+```
+
 From the repo root, use the folder-prefixed script path instead:
 
 ```powershell

@@ -6,6 +6,7 @@ import { fileURLToPath } from "node:url";
 const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.dirname(scriptDir);
 const root = path.join(projectRoot, "site");
+const toolsRoot = path.join(projectRoot, "tools");
 const port = Number(process.argv[2] || process.env.PORT || 4173);
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
@@ -17,11 +18,14 @@ const mimeTypes = {
 const server = http.createServer(async (request, response) => {
   try {
     const url = new URL(request.url || "/", `http://localhost:${port}`);
-    const safePath = path
-      .normalize(url.pathname === "/" ? "/armor-catalog.html" : url.pathname)
-      .replace(/^(\.\.[/\\])+/, "");
-    const filePath = path.join(root, safePath);
-    if (!filePath.startsWith(root)) {
+    const requestedPath = url.pathname === "/" ? "/armor-catalog.html" : url.pathname;
+    const baseRoot = requestedPath.startsWith("/tools/") ? toolsRoot : root;
+    const relativePath = requestedPath.startsWith("/tools/")
+      ? requestedPath.replace(/^\/tools\//, "/")
+      : requestedPath;
+    const safePath = path.normalize(relativePath).replace(/^(\.\.[/\\])+/, "");
+    const filePath = path.join(baseRoot, safePath);
+    if (!filePath.startsWith(baseRoot)) {
       response.writeHead(403);
       response.end("Forbidden");
       return;
