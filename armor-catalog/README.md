@@ -11,6 +11,12 @@ This workspace contains a maintainable armor catalog for The Modding Bordello mo
 
 ## Update Workflow
 
+From the `armor-catalog` folder:
+
+```powershell
+cd "C:\Users\Admin\Documents\Bordello Requests\armor-catalog"
+```
+
 1. Run `node scripts/build-armor-catalog.mjs --refresh` after a major modlist update.
 2. Edit `data/armor-catalog.csv` to curate user-facing rows:
    - Set `armor_weight_tier` to `Clothing`, `Light`, `Heavy`, `Mixed`, or `Unknown`.
@@ -26,6 +32,12 @@ node scripts/serve-site.mjs 4173
 ```
 
 Then open `http://127.0.0.1:4173/`.
+
+From the repo root, use the folder-prefixed script path instead:
+
+```powershell
+node armor-catalog/scripts/serve-site.mjs 4173
+```
 
 ## Nexus Images
 

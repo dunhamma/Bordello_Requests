@@ -1,8 +1,11 @@
 import http from "node:http";
 import fs from "node:fs/promises";
 import path from "node:path";
+import { fileURLToPath } from "node:url";
 
-const root = path.join(process.cwd(), "site");
+const scriptDir = path.dirname(fileURLToPath(import.meta.url));
+const projectRoot = path.dirname(scriptDir);
+const root = path.join(projectRoot, "site");
 const port = Number(process.argv[2] || process.env.PORT || 4173);
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
