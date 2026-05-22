@@ -79,6 +79,12 @@ To install the gallery harvester in your normal Nexus-authenticated browser, ope
 http://127.0.0.1:4173/gallery-setup.html
 ```
 
+On Windows, you can also double-click `start-gallery-server.cmd` from this folder. It serves the setup page and catalog preview at:
+
+```text
+http://127.0.0.1:4174/gallery-setup.html
+```
+
 From the repo root, use the folder-prefixed script path instead:
 
 ```powershell
