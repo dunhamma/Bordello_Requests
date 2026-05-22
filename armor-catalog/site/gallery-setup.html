@@ -49,7 +49,7 @@
       gap: 12px;
       margin-top: 18px;
     }
-    a.button {
+    .button {
       display: inline-flex;
       align-items: center;
       justify-content: center;
@@ -61,9 +61,29 @@
       text-decoration: none;
       font-weight: 700;
       background: var(--accent);
+      cursor: pointer;
     }
-    a.secondary {
+    .secondary {
       background: transparent;
+    }
+    textarea {
+      display: block;
+      width: 100%;
+      min-height: 220px;
+      margin-top: 14px;
+      padding: 12px;
+      border: 1px solid var(--border);
+      border-radius: 6px;
+      background: var(--bg);
+      color: var(--text);
+      font: 12px/1.5 Consolas, "Liberation Mono", monospace;
+      resize: vertical;
+    }
+    .status {
+      margin-top: 10px;
+      min-height: 20px;
+      font-size: 0.95rem;
+      color: var(--muted);
     }
     code {
       border: 1px solid var(--border);
@@ -86,24 +106,67 @@
     <section class="panel">
       <h2>Install</h2>
       <p>
-        Tampermonkey or Violentmonkey should open an install screen when you click the userscript.
+        If Chrome blocks direct install from localhost, use the manual install flow below.
       </p>
       <div class="actions">
-        <a class="button" href="/tools/nexus-gallery-harvester.user.js">Install gallery harvester</a>
+        <a class="button" href="/tools/nexus-gallery-harvester.user.js">Try direct install</a>
         <a class="button secondary" href="/">Open catalog preview</a>
       </div>
+    </section>
+
+    <section class="panel">
+      <h2>Manual Install</h2>
+      <ol>
+        <li>Install or open Tampermonkey/Violentmonkey in this browser.</li>
+        <li>Open its dashboard and create a new script.</li>
+        <li>Click <strong>Copy script</strong> below, paste over the starter script, and save.</li>
+        <li>Refresh the catalog preview. The <strong>Harvest Nexus galleries</strong> button should appear.</li>
+      </ol>
+      <div class="actions">
+        <button class="button" type="button" id="copy-script">Copy script</button>
+        <a class="button secondary" href="/tools/nexus-gallery-harvester.user.js" target="_blank" rel="noreferrer">Open raw script</a>
+      </div>
+      <p class="status" id="copy-status"></p>
+      <textarea id="script-preview" spellcheck="false" readonly>Loading userscript...</textarea>
     </section>
 
     <section class="panel">
       <h2>Use</h2>
       <ol>
         <li>Make sure this same browser is logged into Nexus Mods.</li>
-        <li>Open the catalog preview at <code>http://127.0.0.1:4173/</code>.</li>
+        <li>Open the catalog preview at <code id="preview-url">http://127.0.0.1:4174/</code>.</li>
         <li>Click <strong>Harvest Nexus galleries</strong>.</li>
         <li>Save the downloaded file as <code>armor-catalog/data/nexus-gallery-candidates.csv</code>.</li>
         <li>Tell Codex to import it, then we can do the visual pass together.</li>
       </ol>
     </section>
   </main>
+  <script>
+    const scriptPreview = document.getElementById("script-preview");
+    const copyStatus = document.getElementById("copy-status");
+    const copyButton = document.getElementById("copy-script");
+    document.getElementById("preview-url").textContent = `${location.origin}/`;
+
+    fetch("/tools/nexus-gallery-harvester.user.js")
+      .then((response) => response.text())
+      .then((script) => {
+        scriptPreview.value = script;
+      })
+      .catch((error) => {
+        scriptPreview.value = `Could not load userscript: ${error.message}`;
+      });
+
+    copyButton.addEventListener("click", async () => {
+      try {
+        await navigator.clipboard.writeText(scriptPreview.value);
+        copyStatus.textContent = "Copied. Paste it into a new Tampermonkey or Violentmonkey script and save.";
+      } catch {
+        scriptPreview.focus();
+        scriptPreview.select();
+        document.execCommand("copy");
+        copyStatus.textContent = "Selected/copied if your browser allowed it. If not, press Ctrl+C.";
+      }
+    });
+  </script>
 </body>
 </html>
