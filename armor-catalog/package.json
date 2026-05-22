@@ -6,6 +6,8 @@
   "scripts": {
     "refresh": "node scripts/build-armor-catalog.mjs --refresh",
     "build": "node scripts/build-armor-catalog.mjs --build",
+    "enrich:mod-search": "node scripts/build-armor-catalog.mjs --enrich-mod-search --build",
+    "enrich:mo2": "node scripts/build-armor-catalog.mjs --enrich-mo2 --build",
     "enrich:nexus": "node scripts/build-armor-catalog.mjs --enrich-nexus --build"
   }
 }

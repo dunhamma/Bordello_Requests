@@ -25,6 +25,28 @@ cd "C:\Users\Admin\Documents\Bordello Requests\armor-catalog"
 3. Run `node scripts/build-armor-catalog.mjs --build`.
 4. Publish `site/armor-catalog.json` and `site/armor-catalog.html`, or copy the HTML into the site.
 
+To enrich rows from the public Nexus Mods Moderator Tools search API:
+
+```powershell
+node scripts/build-armor-catalog.mjs --enrich-mod-search --build
+```
+
+This fills Nexus thumbnail URLs when the CSV image is blank, records category/summary metadata in `notes`, and only fills `armor_weight_tier` when the mod name or summary explicitly identifies clothing, light armor, heavy armor, or mixed light/heavy variants.
+
+To enrich weight tiers from a local MO2 instance:
+
+```powershell
+node scripts/build-armor-catalog.mjs --enrich-mo2 --mo2-instance "D:\Path\To\MO2\Instance" --profile "Default" --build
+```
+
+You can also pass explicit paths:
+
+```powershell
+node scripts/build-armor-catalog.mjs --enrich-mo2 --mods-path "D:\Path\To\mods" --profile-path "D:\Path\To\profiles\Default" --build
+```
+
+The MO2 scanner reads enabled mods from `modlist.txt`, active plugins from `plugins.txt` when present, matches catalog rows by Nexus `modid` from each mod's `meta.ini` or by folder name, then scans plugin `ARMO` records for vanilla `ArmorLight`, `ArmorHeavy`, and `ArmorClothing` keywords.
+
 To preview locally:
 
 ```powershell

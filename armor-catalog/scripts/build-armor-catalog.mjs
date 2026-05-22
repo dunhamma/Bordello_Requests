@@ -52,8 +52,10 @@ const STATUSES = new Set(["Needs URL", "Needs Weight", "Needs Image", "Ready", "
 
 const args = new Set(process.argv.slice(2));
 const shouldRefresh = args.has("--refresh");
-const shouldBuild = args.has("--build") || shouldRefresh || args.has("--enrich-nexus");
+const shouldBuild = args.has("--build") || shouldRefresh || args.has("--enrich-nexus") || args.has("--enrich-mod-search") || args.has("--enrich-mo2");
 const shouldEnrichNexus = args.has("--enrich-nexus");
+const shouldEnrichModSearch = args.has("--enrich-mod-search");
+const shouldEnrichMo2 = args.has("--enrich-mo2");
 
 await fs.mkdir(DATA_DIR, { recursive: true });
 await fs.mkdir(SITE_DIR, { recursive: true });
@@ -72,6 +74,16 @@ if (shouldEnrichNexus) {
   await writeCsv(CSV_PATH, rows);
 }
 
+if (shouldEnrichModSearch) {
+  rows = await enrichRowsWithModSearch(rows);
+  await writeCsv(CSV_PATH, rows);
+}
+
+if (shouldEnrichMo2) {
+  rows = await enrichRowsWithMo2(rows);
+  await writeCsv(CSV_PATH, rows);
+}
+
 if (shouldBuild) {
   const validation = validateRows(rows);
   await writeJson(JSON_PATH, rows, validation);
@@ -80,8 +92,8 @@ if (shouldBuild) {
   console.log(`Built ${relative(JSON_PATH)} and ${relative(HTML_PATH)}.`);
 }
 
-if (!shouldRefresh && !shouldBuild && !shouldEnrichNexus) {
-  console.log("Usage: npm run refresh | npm run build | npm run enrich:nexus");
+if (!shouldRefresh && !shouldBuild && !shouldEnrichNexus && !shouldEnrichMo2) {
+  console.log("Usage: npm run refresh | npm run build | npm run enrich:mod-search | npm run enrich:mo2 | npm run enrich:nexus");
 }
 
 async function readExistingRows() {
@@ -379,6 +391,365 @@ async function enrichRowsWithNexusMetadata(sourceRows) {
     }
   }
   return enriched;
+}
+
+async function enrichRowsWithModSearch(sourceRows) {
+  let enrichedCount = 0;
+  let imageCount = 0;
+  let tierCount = 0;
+  const enriched = [];
+  for (const row of sourceRows) {
+    if (row.entry_type !== "Catalog Item" || !row.nexus_mod_id || !row.nexus_game_domain || row.status === "Deprecated") {
+      enriched.push(row);
+      continue;
+    }
+    try {
+      const match = await fetchModSearchMatch(row);
+      if (!match) {
+        enriched.push(row);
+        continue;
+      }
+      const inferredTier = inferWeightTier(match);
+      const next = { ...row };
+      const metadataNote = buildModSearchNote(match, inferredTier);
+      next.notes = mergeNote(stripModSearchNote(row.notes), metadataNote);
+      if (!next.image_url && match.thumbnailUrl) {
+        next.image_url = match.thumbnailUrl;
+        next.image_source_url = row.nexus_url;
+        next.image_rank = "mod-search-thumbnail";
+        imageCount += 1;
+      }
+      const canApplyTier =
+        inferredTier.tier !== "Unknown"
+        && inferredTier.confidence === "explicit"
+        && (next.armor_weight_tier === "Unknown" || row.notes.includes("tier inferred:"));
+      if (canApplyTier) {
+        next.armor_weight_tier = inferredTier.tier;
+        tierCount += 1;
+      }
+      next.status = recomputeStatus(next);
+      next.last_verified = todayIso();
+      enriched.push(normalizeRow(next));
+      enrichedCount += 1;
+      await delay(150);
+    } catch (error) {
+      console.warn(`Mod Search enrichment failed for ${row.display_name}: ${error.message}`);
+      enriched.push(row);
+    }
+  }
+  console.log(`Mod Search enriched ${enrichedCount} rows; filled ${imageCount} images and ${tierCount} explicit weight tiers.`);
+  return enriched;
+}
+
+async function enrichRowsWithMo2(sourceRows) {
+  const scan = await scanMo2Instance();
+  let matchedRows = 0;
+  let appliedRows = 0;
+  const enriched = sourceRows.map((row) => {
+    if (row.entry_type !== "Catalog Item" || row.status === "Deprecated") return row;
+    const result = findMo2ScanResult(row, scan);
+    if (!result || result.tier === "Unknown") return row;
+    matchedRows += 1;
+    const next = { ...row };
+    const canApplyTier = next.armor_weight_tier === "Unknown" || next.notes.includes("tier inferred:") || next.notes.includes("MO2 scan:");
+    next.notes = mergeNote(stripMo2ScanNote(next.notes), buildMo2ScanNote(result));
+    if (canApplyTier) {
+      next.armor_weight_tier = result.tier;
+      appliedRows += 1;
+    }
+    next.status = recomputeStatus(next);
+    next.last_verified = todayIso();
+    return normalizeRow(next);
+  });
+  console.log(`MO2 scan matched ${matchedRows} catalog rows and applied ${appliedRows} weight tiers.`);
+  return enriched;
+}
+
+async function scanMo2Instance() {
+  const explicitModsPath = getArgValue("--mods-path") || process.env.MO2_MODS_PATH;
+  const explicitProfilePath = getArgValue("--profile-path") || process.env.MO2_PROFILE_PATH;
+  const instancePath = getArgValue("--mo2-instance") || process.env.MO2_INSTANCE_PATH;
+  const profileName = getArgValue("--profile") || process.env.MO2_PROFILE || "Default";
+  const modsPath = explicitModsPath || (instancePath ? path.join(instancePath, "mods") : "");
+  const profilePath = explicitProfilePath || (instancePath ? path.join(instancePath, "profiles", profileName) : "");
+  if (!modsPath || !profilePath) {
+    throw new Error("MO2 scan requires --mo2-instance, or both --mods-path and --profile-path.");
+  }
+  await assertDirectory(modsPath, "MO2 mods path");
+  await assertDirectory(profilePath, "MO2 profile path");
+
+  const enabledMods = await readEnabledModNames(path.join(profilePath, "modlist.txt"));
+  const activePlugins = await readActivePluginNames(path.join(profilePath, "plugins.txt"));
+  const byModId = new Map();
+  const byName = new Map();
+  let scannedMods = 0;
+  let scannedPlugins = 0;
+
+  for (const modName of enabledMods) {
+    const modPath = path.join(modsPath, modName);
+    if (!(await pathExists(modPath))) continue;
+    const plugins = await findPluginFiles(modPath, activePlugins);
+    if (!plugins.length) continue;
+    const meta = await readMo2Meta(path.join(modPath, "meta.ini"));
+    const aggregate = {
+      modName,
+      modId: meta.modid || "",
+      plugins: [],
+      counts: { Light: 0, Heavy: 0, Clothing: 0 },
+      tier: "Unknown"
+    };
+    for (const pluginPath of plugins) {
+      try {
+        const pluginScan = await scanPluginArmorKeywords(pluginPath);
+        aggregate.plugins.push(path.basename(pluginPath));
+        aggregate.counts.Light += pluginScan.counts.Light;
+        aggregate.counts.Heavy += pluginScan.counts.Heavy;
+        aggregate.counts.Clothing += pluginScan.counts.Clothing;
+        scannedPlugins += 1;
+      } catch (error) {
+        console.warn(`Skipping ${pluginPath}: ${error.message}`);
+      }
+    }
+    aggregate.tier = tierFromCounts(aggregate.counts);
+    if (aggregate.tier === "Unknown") continue;
+    scannedMods += 1;
+    byName.set(normalizeKey(modName), aggregate);
+    if (aggregate.modId) byModId.set(String(aggregate.modId), aggregate);
+  }
+  console.log(`MO2 scan read ${enabledMods.length} enabled mods, ${scannedPlugins} plugins, and found armor keywords in ${scannedMods} mods.`);
+  return { byModId, byName, modsPath, profilePath };
+}
+
+async function assertDirectory(directoryPath, label) {
+  const stat = await fs.stat(directoryPath).catch(() => null);
+  if (!stat?.isDirectory()) throw new Error(`${label} not found: ${directoryPath}`);
+}
+
+async function readEnabledModNames(modlistPath) {
+  const text = await fs.readFile(modlistPath, "utf8");
+  return text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line.startsWith("+"))
+    .map((line) => line.slice(1).trim())
+    .filter((name) => name && !/^DLC:/.test(name));
+}
+
+async function readActivePluginNames(pluginsPath) {
+  if (!(await pathExists(pluginsPath))) return null;
+  const text = await fs.readFile(pluginsPath, "utf8");
+  const active = text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line.startsWith("*"))
+    .map((line) => line.slice(1).toLowerCase());
+  return active.length ? new Set(active) : null;
+}
+
+async function readMo2Meta(metaPath) {
+  if (!(await pathExists(metaPath))) return {};
+  const text = await fs.readFile(metaPath, "utf8");
+  const meta = {};
+  for (const line of text.split(/\r?\n/)) {
+    const match = line.match(/^([^=]+)=(.*)$/);
+    if (match) meta[match[1].trim().toLowerCase()] = match[2].trim();
+  }
+  return meta;
+}
+
+async function findPluginFiles(modPath, activePlugins) {
+  const found = [];
+  await walk(modPath, 2, async (filePath) => {
+    if (!/\.(esp|esm|esl)$/i.test(filePath)) return;
+    if (activePlugins && !activePlugins.has(path.basename(filePath).toLowerCase())) return;
+    found.push(filePath);
+  });
+  return found;
+}
+
+async function walk(directoryPath, depth, onFile) {
+  if (depth < 0) return;
+  let entries = [];
+  try {
+    entries = await fs.readdir(directoryPath, { withFileTypes: true });
+  } catch {
+    return;
+  }
+  for (const entry of entries) {
+    const entryPath = path.join(directoryPath, entry.name);
+    if (entry.isDirectory()) await walk(entryPath, depth - 1, onFile);
+    else if (entry.isFile()) await onFile(entryPath);
+  }
+}
+
+async function scanPluginArmorKeywords(pluginPath) {
+  const buffer = await fs.readFile(pluginPath);
+  const context = { masters: [], skyrimMasterIndex: 0, counts: { Light: 0, Heavy: 0, Clothing: 0 } };
+  scanPluginRange(buffer, 0, buffer.length, context);
+  return context;
+}
+
+function scanPluginRange(buffer, start, end, context) {
+  let offset = start;
+  while (offset + 24 <= end) {
+    const signature = ascii(buffer, offset, 4);
+    if (signature === "GRUP") {
+      const groupSize = buffer.readUInt32LE(offset + 4);
+      if (groupSize < 24) break;
+      scanPluginRange(buffer, offset + 24, Math.min(offset + groupSize, end), context);
+      offset += groupSize;
+      continue;
+    }
+    const recordSize = buffer.readUInt32LE(offset + 4);
+    const dataStart = offset + 24;
+    const dataEnd = dataStart + recordSize;
+    if (dataEnd > end) break;
+    if (signature === "TES4") parseTes4Masters(buffer, dataStart, dataEnd, context);
+    if (signature === "ARMO") parseArmoKeywords(buffer, dataStart, dataEnd, context);
+    offset = dataEnd;
+  }
+}
+
+function parseTes4Masters(buffer, start, end, context) {
+  for (const field of iterateSubrecords(buffer, start, end)) {
+    if (field.type === "MAST") context.masters.push(readCString(buffer, field.start, field.end));
+  }
+  const skyrimIndex = context.masters.findIndex((master) => master.toLowerCase() === "skyrim.esm");
+  context.skyrimMasterIndex = skyrimIndex >= 0 ? skyrimIndex : 0;
+}
+
+function parseArmoKeywords(buffer, start, end, context) {
+  const keywords = [];
+  for (const field of iterateSubrecords(buffer, start, end)) {
+    if (field.type !== "KWDA") continue;
+    for (let offset = field.start; offset + 4 <= field.end; offset += 4) {
+      keywords.push(buffer.readUInt32LE(offset));
+    }
+  }
+  const expected = skyrimArmorKeywordIds(context.skyrimMasterIndex);
+  const hasLight = keywords.includes(expected.Light);
+  const hasHeavy = keywords.includes(expected.Heavy);
+  const hasClothing = keywords.includes(expected.Clothing);
+  if (hasLight) context.counts.Light += 1;
+  if (hasHeavy) context.counts.Heavy += 1;
+  if (hasClothing) context.counts.Clothing += 1;
+}
+
+function* iterateSubrecords(buffer, start, end) {
+  let offset = start;
+  let overrideSize = null;
+  while (offset + 6 <= end) {
+    const type = ascii(buffer, offset, 4);
+    const size = buffer.readUInt16LE(offset + 4);
+    const dataStart = offset + 6;
+    const dataSize = overrideSize ?? size;
+    const dataEnd = dataStart + dataSize;
+    if (dataEnd > end) break;
+    if (type === "XXXX" && size === 4) {
+      overrideSize = buffer.readUInt32LE(dataStart);
+      offset = dataEnd;
+      continue;
+    }
+    yield { type, start: dataStart, end: dataEnd };
+    overrideSize = null;
+    offset = dataEnd;
+  }
+}
+
+function skyrimArmorKeywordIds(masterIndex) {
+  const prefix = masterIndex << 24;
+  return {
+    Light: (prefix | 0x0006BBD2) >>> 0,
+    Heavy: (prefix | 0x0006BBD3) >>> 0,
+    Clothing: (prefix | 0x000A8657) >>> 0
+  };
+}
+
+function tierFromCounts(counts) {
+  const hasLight = counts.Light > 0;
+  const hasHeavy = counts.Heavy > 0;
+  const hasClothing = counts.Clothing > 0;
+  if ((hasLight && hasHeavy) || (hasClothing && (hasLight || hasHeavy))) return "Mixed";
+  if (hasLight) return "Light";
+  if (hasHeavy) return "Heavy";
+  if (hasClothing) return "Clothing";
+  return "Unknown";
+}
+
+function findMo2ScanResult(row, scan) {
+  if (row.nexus_mod_id && scan.byModId.has(String(row.nexus_mod_id))) return scan.byModId.get(String(row.nexus_mod_id));
+  const candidates = [row.canonical_mod_name, row.display_name].map(normalizeKey);
+  return candidates.map((key) => scan.byName.get(key)).find(Boolean) || null;
+}
+
+function buildMo2ScanNote(result) {
+  return `MO2 scan: ${result.modName}; plugins: ${result.plugins.join(", ")}; ARMO keyword counts L/H/C ${result.counts.Light}/${result.counts.Heavy}/${result.counts.Clothing}; tier: ${result.tier}`;
+}
+
+function stripMo2ScanNote(note) {
+  return String(note || "")
+    .split(" | ")
+    .filter((part) => !part.startsWith("MO2 scan:"))
+    .join(" | ");
+}
+
+async function fetchModSearchMatch(row) {
+  const response = await fetch("https://nexus-mods-moderator-tools.vercel.app/api/nexusmods/mods", {
+    method: "POST",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify({
+      filters: {
+        op: "AND",
+        name: { value: row.canonical_mod_name || row.display_name, op: "WILDCARD" },
+        gameDomainName: { value: row.nexus_game_domain, op: "EQUALS" }
+      },
+      sort: { endorsements: { direction: "DESC" } },
+      offset: 0
+    })
+  });
+  if (!response.ok) throw new Error(`HTTP ${response.status}`);
+  const payload = await response.json();
+  const nodes = payload?.mods?.nodes || [];
+  return nodes.find((node) => String(node.modId) === String(row.nexus_mod_id)) || null;
+}
+
+function inferWeightTier(match) {
+  const text = `${match.name || ""} ${match.summary || ""} ${match.category || ""}`.toLowerCase();
+  const hasMixedArmor =
+    /\b(light|heavy)\s+(or|and|\/)\s+(light|heavy)\s+(armor|armour)\b/.test(text)
+    || /\b(cloth|clothing)\b.{0,80}\blight\b.{0,80}\bheavy\s+(armor|armour)\b/.test(text)
+    || /\blight\b.{0,80}\bheavy\s+(armor|armour)\s+sets?\b/.test(text);
+  const hasLight = /\blight\s+(armor|armour)\b|\b(light|leather)\s+set\b/.test(text);
+  const hasHeavy = /\bheavy\s+(armor|armour)\b|\b(heavy|plate)\s+set\b/.test(text);
+  const hasClothing = /\b(clothing|clothes|robe|robes|dress|dresses|gown|outfit|bodysuit|corset|lingerie|bikini|jewelry|jewellery|amulet|necklace|earrings|veil)\b/.test(text);
+  if (hasMixedArmor) return { tier: "Mixed", confidence: "explicit", reason: "mentions multiple armor weight variants" };
+  if (hasLight && hasHeavy) return { tier: "Mixed", confidence: "explicit", reason: "mentions both light and heavy armor" };
+  if (hasLight) return { tier: "Light", confidence: "explicit", reason: "mentions light armor" };
+  if (hasHeavy) return { tier: "Heavy", confidence: "explicit", reason: "mentions heavy armor" };
+  if (hasClothing && !/\b(armor|armour)\b/.test(text)) return { tier: "Clothing", confidence: "explicit", reason: "clothing/outfit wording without armor wording" };
+  return { tier: "Unknown", confidence: "none", reason: "no explicit weight tier in Mod Search metadata" };
+}
+
+function buildModSearchNote(match, inferredTier) {
+  const parts = [];
+  if (match.category) parts.push(`Mod Search category: ${match.category}`);
+  if (match.summary) parts.push(`summary: ${match.summary}`);
+  if (inferredTier.tier !== "Unknown") parts.push(`tier inferred: ${inferredTier.tier} (${inferredTier.reason})`);
+  return parts.join("; ");
+}
+
+function mergeNote(existing, addition) {
+  if (!addition) return existing || "";
+  if (!existing) return addition;
+  if (existing.includes(addition)) return existing;
+  return `${existing} | ${addition}`;
+}
+
+function stripModSearchNote(note) {
+  return String(note || "")
+    .split(" | ")
+    .filter((part) => !part.startsWith("Mod Search category:"))
+    .join(" | ");
 }
 
 async function fetchNexusModMetadata(apiKey, gameDomain, modId) {
@@ -893,6 +1264,43 @@ function splitList(value) {
     .split(";")
     .map((item) => item.trim())
     .filter(Boolean);
+}
+
+function getArgValue(name) {
+  const argv = process.argv.slice(2);
+  const index = argv.indexOf(name);
+  if (index >= 0 && argv[index + 1] && !argv[index + 1].startsWith("--")) return argv[index + 1];
+  const prefixed = argv.find((arg) => arg.startsWith(`${name}=`));
+  return prefixed ? prefixed.slice(name.length + 1) : "";
+}
+
+async function pathExists(filePath) {
+  try {
+    await fs.access(filePath);
+    return true;
+  } catch {
+    return false;
+  }
+}
+
+function normalizeKey(value) {
+  return String(value || "")
+    .toLowerCase()
+    .replace(/['"]/g, "")
+    .replace(/\b(se|sse|ae|skyrim special edition|main file)\b/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .trim()
+    .replace(/\s+/g, " ");
+}
+
+function ascii(buffer, offset, length) {
+  return buffer.toString("ascii", offset, offset + length);
+}
+
+function readCString(buffer, start, end) {
+  let stop = start;
+  while (stop < end && buffer[stop] !== 0) stop += 1;
+  return buffer.toString("utf8", start, stop);
 }
 
 function printValidation(validation) {

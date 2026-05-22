@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-05-22T22:38:36.029Z",
+  "generatedAt": "2026-05-22T22:55:51.608Z",
   "source": "data/armor-catalog.csv",
   "modlists": [
     {
@@ -36,9 +36,9 @@
   "validation": {
     "totalRows": 534,
     "publicRows": 147,
-    "readyPublicRows": 0,
-    "missingImages": 147,
-    "unknownWeights": 147,
+    "readyPublicRows": 58,
+    "missingImages": 25,
+    "unknownWeights": 89,
     "needsUrl": 0
   },
   "entries": [
@@ -46,13 +46,13 @@
       "catalogId": "skyrimspecialedition-163162",
       "displayName": "(Grimlook33) Night Prowler Bodysuit",
       "canonicalModName": "(Grimlook33) Night Prowler Bodysuit",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/163162",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "163162",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/163162/163162-1761878775-1221101839.jpg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/163162",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -71,8 +71,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: A sexy tight fitting bodysuit in 2 texture variants, leather and latex. For the 3BA and BHUNP body; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -215,9 +215,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/145137",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "145137",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/145137/145137-1745083639-1040985703.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/145137",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -240,7 +240,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Add-on for Thuldor's Sentinel - An Equipment Overhaul to modularly add 4thUnknown's armor mods to Sentinel's leveled lists and be distributed to containers and actors.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -251,9 +251,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/109333",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "109333",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/109333/117376-1705326620-1853582037.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/109333",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -276,20 +276,20 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Full beast races support. Non-HDT patch. No Skirt version. \"Warm\" keyword added. Several fixes and tweaks. 4K-2K. ESL.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-91741",
       "displayName": "Adventurer HDT-SMP Armor",
       "canonicalModName": "Adventurer HDT-SMP Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Light",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91741",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "91741",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/91741/91741-1684570475-1240779486.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91741",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -311,8 +311,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Unisex HDT-SMP standalone light armor and backpack.; tier inferred: Light (mentions light armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -323,9 +323,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/95089",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "95089",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/95089/95089-1692813848-1898189616.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/95089",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -348,20 +348,20 @@
         "DOD: 1.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds 4 altmer themed armor sets and 2 weapons",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-165651",
       "displayName": "Aegyptus",
       "canonicalModName": "Aegyptus",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/165651",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "165651",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/165651/165651-1764324991-1781265883.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/165651",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -380,8 +380,8 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Egyptian themed outfit for CBBE 3BA and BHUNP; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -392,9 +392,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/119440",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "119440",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/119440/119440-1718051807-94289582.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/119440",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -414,7 +414,7 @@
         "DOD: 1.4.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A craftable modular armor set made of bones and leather.For CBBE, 3BA, UBE and BHUNP.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -425,9 +425,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/145584",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "145584",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/145584/145584-1742769588-2143608128.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/145584",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -450,7 +450,7 @@
         "DOD: f1.00"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds new standalone armor, shield and sword inspired by Dark Fantasy. (ESL Flagged, 4KResolution, HDT-SMP)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -461,9 +461,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/113809",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "113809",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/113809/113809-1729987386-527556680.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/113809",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -486,7 +486,7 @@
         "DOD: 1.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Weapons and Armour; summary: Adds new standalone armor and mace inspired by Dark Fantasy. (ESL Flagged, 4K Resolution)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -497,9 +497,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/129809",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "129809",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/129809/129809-1729987532-1912115267.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/129809",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -522,7 +522,7 @@
         "DOD: 1.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds new standalone armor inspired by Dark Fantasy. (ESL Flagged, 4K Resolution)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -533,9 +533,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/139513",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "139513",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/139513/139513-1737351208-1154253311.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/139513",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -555,7 +555,7 @@
         "DOD: 2.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Ashtoreth Frostwarden Regalia by Ashtoreth but with working bodyslide and esp fixes. Packaged in zeroed sliders for OBody, and pants repurposed from Monster Hunter Armor.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -566,9 +566,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/121886",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "121886",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/121886/121886-1718409473-566706531.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/121886",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -588,7 +588,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Clothing version. Optimized 4K-2K-1K versions. Improved ground items. Non-HDT patches. New Bracelets added. Some extra fixes and tweaks.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -599,9 +599,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/86891",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "86891",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/86891/86891-1678740583-74968725.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/86891",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -624,7 +624,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A highly customizable set of female armor.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -664,13 +664,13 @@
       "catalogId": "skyrimspecialedition-148026",
       "displayName": "Azure Knight Armor",
       "canonicalModName": "Azure Knight Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Mixed",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/148026",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "148026",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/148026/148026-1747415034-857469764.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/148026",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -689,21 +689,21 @@
         "MOM: 1.3.0.0",
         "DOD: 1.3.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Light or heavy armor set.3BA and UBE. SMP physics.; tier inferred: Mixed (mentions multiple armor weight variants)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-110420",
       "displayName": "Balfieran Knight Set",
       "canonicalModName": "Balfieran Knight Set",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110420",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "110420",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/110420/110420-1708083272-1518538824.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110420",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -725,21 +725,21 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Adds an altmer themed heavy armor set & a weapon; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-111059",
       "displayName": "Bisquits Pain Bringer",
       "canonicalModName": "Bisquits Pain Bringer",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/111059",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "111059",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/111059/111059-1739782048-661122221.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/111059",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -758,21 +758,21 @@
         "MOM: 1.3.0.0",
         "DOD: 1.3.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Oblivion outfit originally by bisquits now converted for SSE CBBE 3BA bodyslide. Upscaled texture and color variant.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-356",
       "displayName": "Black Mage Armor",
       "canonicalModName": "Black Mage Armor SE",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Mixed",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/356",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "356",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/356/356-1546310104-1265722365.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/356",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -794,8 +794,8 @@
         "MOM: 1.10.0.0",
         "DOD: 1.10.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Black Mage Armor is a standalone armor mod that includes Cloth, Light, and Heavy armor sets that are all craftable, enchantable, and upgradable; all sets can be used by every race, male or female.; tier inferred: Mixed (mentions multiple armor weight variants)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -806,9 +806,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/170827",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "170827",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/170827/170827-1769866312-1276117968.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/170827",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -828,7 +828,7 @@
         "DOD: 1.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Sneaky armor for black widows. CBBE 3BA and BHUNP",
       "lastVerified": "2026-05-23"
     },
     {
@@ -839,9 +839,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/62751",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "62751",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/62751/62751-1643578638-648025759.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/62751",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -864,20 +864,20 @@
         "DOD: 1.3.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Armor set with some customization features",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-134752",
       "displayName": "Callisto HDT-SMP Armor",
       "canonicalModName": "Callisto HDT-SMP Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/134752",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "134752",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/134752/134752-1732444890-1417831491.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/134752",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -899,8 +899,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: HDT-SMP standalone female heavy armor.; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -911,9 +911,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133795",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "133795",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/133795/133795-1731623232-1148856780.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133795",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -936,7 +936,7 @@
         "DOD: f1.01"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A light pirate outfit.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1000,13 +1000,13 @@
       "catalogId": "skyrimspecialedition-134088",
       "displayName": "Common Clothing Expansion",
       "canonicalModName": "Common Clothing Expansion",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/134088",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "134088",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/134088/134088-1731839773-1329213344.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/134088",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1044,21 +1044,21 @@
         "VOV: 1.2.0.0",
         "VOV: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: This mod adds new lore friendly clothing to the game.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-154021",
       "displayName": "Common Clothing Expansion - Tops and Bottoms and Color Variants",
       "canonicalModName": "Common Clothing Expansion - Tops and Bottoms and Color Variants",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/154021",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "154021",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/154021/154021-1751472971-194749341.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/154021",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1083,21 +1083,21 @@
         "DOD: 1.0.0.0",
         "VOV: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Hornclonic's Common Clothing Expansion made modular and with different color options!; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-71116",
       "displayName": "Countess Armor",
       "canonicalModName": "Countess Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Light",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/71116",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "71116",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/71116/71116-1657461861-133216976.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/71116",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1124,21 +1124,21 @@
         "DOD: 1.2.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Unisex standalone light armor. HDT-SMP body physics is available as optional.; tier inferred: Light (mentions light armor)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-146397",
       "displayName": "Crochet Bikini",
       "canonicalModName": "Crochet Bikini",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/146397",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "146397",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/146397/146397-1743460758-1621433098.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/146397",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -1157,21 +1157,21 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Crochet Bikini in 18 colors for CBBE 3BA and BHUNP; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-114751",
       "displayName": "Crown Plate Set",
       "canonicalModName": "Crown Plate Set",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/114751",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "114751",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/114751/114751-1712351139-447378358.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/114751",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1193,21 +1193,21 @@
         "MOM: 1.2.0.0",
         "DOD: 1.2.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Adds an redguard themed heavy armor set & a weapon; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-91522",
       "displayName": "Crowns (House of the Dragon)",
       "canonicalModName": "Crowns (House of the Dragon)",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91522",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "91522",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/91522/91522-1684359300-161905553.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91522",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1229,8 +1229,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Wanna sit your ass on the [s]iron[\\s] ruby throne and circlets just aren't kingly enough?Now with the addition of Aegon's and Jaehaerys' crowns you can do your throne-sittinng with excessive kingnessHow excessive? you ask. Well, let's just; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1277,9 +1277,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/29667",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "29667",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/29667/29667-1570972364-1043306879.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/29667",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1302,7 +1302,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds two new armor sets that are meant to belong to Cyrodiilic branch of the Thieves Guild.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1378,13 +1378,13 @@
       "catalogId": "skyrimspecialedition-128683",
       "displayName": "Dracania Armor",
       "canonicalModName": "Dracania Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Mixed",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/128683",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "128683",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/128683/128683-1726434620-1800217924.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/128683",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -1403,8 +1403,8 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: A extremely modular female plate armor set.For CBBE, 3BA, UBE and BHUNP. SMP Physics for the outfit.Heavy or light armor. Vanilla, Complex Material and PBR support.; tier inferred: Mixed (mentions multiple armor weight variants)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1415,9 +1415,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/50187",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "50187",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/50187/50187-1643894503-1410236306.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/50187",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -1437,7 +1437,7 @@
         "DOD: 2.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Crafting; summary: A book that helps you locate all crafting manuals for outfits and armors by DeserterX.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1448,9 +1448,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/109000",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "109000",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/109000/109000-1705505979-1337849709.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/109000",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1473,7 +1473,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds a dwemer themed armor set & a weapon",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1521,13 +1521,13 @@
       "catalogId": "skyrimspecialedition-100401",
       "displayName": "Easthold Totemic Set",
       "canonicalModName": "Easthold Totemic Set",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/100401",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "100401",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/100401/100401-1695454864-1268422624.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/100401",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1549,8 +1549,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Adds a nord themed heavy armor set & a weapon; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1561,9 +1561,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110082",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "110082",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/110082/110082-1706191819-166085785.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110082",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1586,7 +1586,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: My patches for this amazing armor mod. HIMBO, CBBE and UNP footwear patches. Non-HDT patch. Carried on USSEP fixes. Several minor fixes and tweaks. ESL.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1597,9 +1597,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/134700",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "134700",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/134700/119376-1732370133-1568432558.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/134700",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1622,7 +1622,7 @@
         "DOD: 1.3.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Weapons and Armour; summary: Proper ground/inventory items. Optimized and fixed textures (4K-2K-1K). BHUNP stretch fix. Several fixes and tweaks.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1633,9 +1633,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/153943",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "153943",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/153943/153943-1765599494-2080380656.jpg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/153943",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -1655,20 +1655,20 @@
         "DOD: 2.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A Craftable 3BA - UBE Armour with custom weapons. ESL Flagged, highly modular, works with pre update versions.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-147010",
       "displayName": "ELLE - Mageali",
       "canonicalModName": "ELLE - Mageali",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/147010",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "147010",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/147010/147010-1765617686-502006045.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/147010",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -1687,8 +1687,8 @@
         "MOM: Main Installer",
         "DOD: Main Installer"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: A Craftable 3BA - UBE clothing. ESL Flagged, highly modular, works with pre update versions.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1732,9 +1732,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/146083",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "146083",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/146083/146083-1743254633-775252246.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/146083",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -1754,7 +1754,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Lorefriendly light or heavy elven armor.3BA and UBE. SMP physics.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1765,9 +1765,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/142291",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "142291",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/142291/142291-1739987849-12547255.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/142291",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -1787,20 +1787,20 @@
         "DOD: 1.3.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Elvenia armor set originally by gutris1 reworked for 3BA and BHUNPv4 with custom textures and new pieces",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-136947",
       "displayName": "Endless Misery Bodysuit",
       "canonicalModName": "Endless Misery Bodysuit",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136947",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "136947",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/136947/136947-1734824293-1992647238.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136947",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -1819,21 +1819,21 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: A sexy leather outfit with a bodysuit, high heels and gloves, for 3BA body.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-145242",
       "displayName": "Eyepatch and Eyewear Collection",
       "canonicalModName": "Eyepatch and Eyewear Collection",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/145242",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "145242",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/145242/145242-1742493003-1916829170.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/145242",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1855,8 +1855,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: A small assortment of eyepatches and eyewear, available for all vanilla races, and with optional distribution.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1867,9 +1867,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/114629",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "114629",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/114629/114629-1710987687-809264845.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/114629",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -1889,7 +1889,7 @@
         "DOD: 1.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Eyren's Ambassador of Darkness set converted from Oblivion HGEC to SSE CBBE 3BA. SMP for skirts.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1900,9 +1900,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/95009",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "95009",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/95009/95009-1688527480-1448237715.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/95009",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -1922,7 +1922,7 @@
         "DOD: 1.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Weapons and Armour; summary: a modular, female only armor & weapon set with a stylized marine knight theme for 3ba bodyslide",
       "lastVerified": "2026-05-23"
     },
     {
@@ -1933,9 +1933,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/135528",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "135528",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/135528/135528-1738859242-1363112572.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/135528",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1958,20 +1958,20 @@
         "DOD: 0.9.2.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Removing the inner part to free your breasts! Highly customizableBased on HDT-SMP Cloth Physics Patch. Original mod is required.  女孩的旅行装之解放胸部版！高度可定制化。需要原MOD。",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-115653",
       "displayName": "Glasses Pack Vol.1",
       "canonicalModName": "Glasses Pack Vol.1",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/115653",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "115653",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/115653/115653-1712431344-1401292668.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/115653",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -1993,21 +1993,21 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Adds a few glasses. Comes with optional ENB complex material version.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-120188",
       "displayName": "Gold and Silver Reading Glasses",
       "canonicalModName": "Gold and Silver Reading Glasses",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120188",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "120188",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/120188/120188-1716582383-2112641401.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120188",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2029,8 +2029,8 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Adds two pairs of craftable reading glasses.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2041,9 +2041,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/22671",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "22671",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/22671/22671-1547888919-472683062.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/22671",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2069,7 +2069,7 @@
         "VOV: 5.5.0.0a"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Weapons and Armour; summary: Replacer for guards and Stormcloak Armor.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2080,9 +2080,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/153775",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "153775",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/153775/153775-1751131419-1799659181.jpg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/153775",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2108,7 +2108,7 @@
         "VOV: 2.4.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Audio; summary: High quality heels sound, balanced distribution, carefully tweaked volume. Replaces the old \"Heels Sound SSE\". Say byebye to the old ear-killer sound effects!",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2154,13 +2154,13 @@
       "catalogId": "skyrimspecialedition-110975",
       "displayName": "Heimu Dudou",
       "canonicalModName": "Heimu Dudou",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110975",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "110975",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/110975/110975-1710789916-236364852.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110975",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -2179,21 +2179,21 @@
         "MOM: 2.2.0.0",
         "DOD: 2.2.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Chinese dudou/undershirt and panty. 3 colors/4 texture variants. For CBBE 3BA/BHUNP. esl flagged esp.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-77615",
       "displayName": "Hermes' Silver Mask (Arslan Senki)",
       "canonicalModName": "Hermes' Silver Mask (Arslan Senki)",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/77615",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "77615",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/77615/77615-1666671393-1133423685.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/77615",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2215,8 +2215,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Did you watch \"The Heroic Legend of Arslan\" (or Arslan Senki) and though; What a great show, I wish I had something from it to take to my Skyrim ?Me neither, it's very bad. But Hermes' silver mask is pretty good, so I brought it to Skyrim; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2227,9 +2227,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/105659",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "105659",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/105659/105659-1701339589-615160580.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/105659",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2252,7 +2252,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A unisex low-fantasy equipment set to suit stealthy adventurers while staying prepared for a fight.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2299,9 +2299,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/88099",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "88099",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/88099/115128-1680187826-578059993.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/88099",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2324,20 +2324,20 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: New armors and weapon",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-143045",
       "displayName": "Iron Rose Armor",
       "canonicalModName": "Iron Rose Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/143045",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "143045",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/143045/143045-1740771501-379581670.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/143045",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -2356,8 +2356,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Lorefriendly heavy armor set, made for a knight.Male and female bodies. Vanilla, Complex Material and PBR support.Additional Bodyslidefiles for 3BA, HIMBO and UBE.; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2409,9 +2409,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/79226",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "79226",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/79226/79226-1669438207-536497549.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/79226",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2434,20 +2434,20 @@
         "DOD: 1.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds an imperial themed set, a weapon & a shield",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-164787",
       "displayName": "Lady Ritual",
       "canonicalModName": "Lady Ritual",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/164787",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "164787",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/164787/164787-1763460241-405057995.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/164787",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -2466,21 +2466,21 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Outfit to do rituals in. CBBE 3BA or BHUNP; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-131645",
       "displayName": "Lavatera Armor",
       "canonicalModName": "Lavatera Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Mixed",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/131645",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "131645",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/131645/131645-1729284273-459593376.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/131645",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -2499,8 +2499,8 @@
         "MOM: 1.2.0.0",
         "DOD: 1.2.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: A modular female armor set, fitting for a daedric disciple.For 3BA and UBE. SMP Physics for the outfit.Heavy or light armor. Vanilla, Complex Material and PBR support.; tier inferred: Mixed (mentions multiple armor weight variants)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2511,9 +2511,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/152660",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "152660",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/152660/152660-1750128251-1153015164.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/152660",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -2533,20 +2533,20 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A outfit style from Naraka Bladepoint : Mingyao Tidal Clash 3BA SMP ESL Flagged -  Support CBBE 3BA and BHUNP v4",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-128173",
       "displayName": "Mage Clothing Expansion",
       "canonicalModName": "Mage Clothing Expansion",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/128173",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "128173",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/128173/128173-1725208211-1693056565.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/128173",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2572,8 +2572,8 @@
         "DOD: 2.0.1.0",
         "VOV: 2.0.1.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: This mod adds new lore friendly mage robes to the game.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2613,13 +2613,13 @@
       "catalogId": "skyrimspecialedition-91506",
       "displayName": "Maormer Seascale Set",
       "canonicalModName": "Maormer Seascale Set",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Light",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91506",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "91506",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/91506/91506-1684345694-450434542.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91506",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2641,8 +2641,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Adds a maormer themed light armor set and a weapon; tier inferred: Light (mentions light armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2653,9 +2653,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91576",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "91576",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/91576/91576-1684362193-1011622051.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/91576",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2678,7 +2678,7 @@
         "DOD: 1.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: My patches for this amazing armor mod. HIMBO, CBBE and UNP footwear patches. USSEP.  Several fixes and tweaks. NON HDT version. 4K-2K optimized textures.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2721,13 +2721,13 @@
       "catalogId": "skyrimspecialedition-82495",
       "displayName": "Moon Monk's Robes",
       "canonicalModName": "Moon Monk's Robes",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Light",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/82495",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "82495",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/82495/82495-1673399455-1755022273.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/82495",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2749,8 +2749,8 @@
         "MOM: 1.2.0.0",
         "DOD: 1.2.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Adds a new set of Khajiiti style light armor, with a handful of alternate colors.; tier inferred: Light (mentions light armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2761,9 +2761,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/149259",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "149259",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/149259/149259-1746450029-1285332770.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/149259",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2786,20 +2786,20 @@
         "DOD: 1.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Add 12 scarves and capes with newly handcrafted models to the Skyrim. Comes with HDT-SMP Physics, CBBE 3BA/BHUNP/HIMBO/Vanilla Female & Male bodyslides, and pre-built meshes for OBody.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-99717",
       "displayName": "N.U.D.E. powered by Underwear.dll",
       "canonicalModName": "N.U.D.E. powered by Underwear.dll",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/99717",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "99717",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/99717/99717-1699578881-1457794975.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/99717",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "TOT"
       ],
@@ -2809,8 +2809,8 @@
       "sourceVersions": [
         "TOT: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: N.U.D.E. variety and classification of NPCs' underwear, now powered by Underwear.dll by ThirdEyeSqueegee and wSkeever!With BodySlide support for CBBE/3BA/BHUNP/HIMBO/HIMBO Lite/SOS Full/SOS Light/SAM.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2821,9 +2821,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/24621",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "24621",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/24621/24621-1553967945-659446259.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/24621",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2846,7 +2846,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Clothing and Accessories; summary: A simple mod that adds an un-enchanted version of the Nightingale armor set. Can be crafted at a forge after level 40.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2893,9 +2893,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110922",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "110922",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/110922/110922-1708897474-20283557.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110922",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2918,20 +2918,20 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A new lore-friendly steel armor set based off of Skyrim's concept art. Flagged as ESL",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-63772",
       "displayName": "Northern God Armor",
       "canonicalModName": "Northern God Armor SE",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/63772",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "63772",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/63772/111006-1645091256-1903579.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/63772",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -2953,8 +2953,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: New unique heavy armor and two-handed axe; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2965,9 +2965,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/121333",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "121333",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/121333/121333-1718381263-1105934606.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/121333",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -2987,7 +2987,7 @@
         "DOD: 1.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A modular female armor set, made for a brutal monster hunter.Also contains a matching warhammer. Complex Material support.For CBBE, 3BA, UBE and BHUNP.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -2998,9 +2998,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/73138",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "73138",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/73138/73138-1660678906-631370.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/73138",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3020,20 +3020,20 @@
         "DOD: 1.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A light customizable female armor set.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-155532",
       "displayName": "Ribbon Outfit",
       "canonicalModName": "Ribbon Outfit",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/155532",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "155532",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/155532/155532-1754243518-1928645592.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/155532",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3052,21 +3052,21 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Ribbon outfit for CBBE 3BA and BHUNPv4 with SMP ribbon bows, comes in many colors; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-120576",
       "displayName": "Rihad Swordsman Set",
       "canonicalModName": "Rihad Swordsman Set",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Light",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120576",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "120576",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/120576/120576-1718306335-1936041591.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120576",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3088,8 +3088,8 @@
         "MOM: 1.3.0.0",
         "DOD: 1.3.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Adds an redguard themed light armor set & a weapon; tier inferred: Light (mentions light armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3100,9 +3100,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122125",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "122125",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/122125/122125-1718657017-1092009757.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122125",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3125,20 +3125,20 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Weapons and Armour; summary: Full beast races support. Blood decals added to the sword. CBBE, UNP and HIMBO feet patches. Clothing version. 2K-1K optimized textures. Several tweaks, fixes and more.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-107904",
       "displayName": "River Watch Set",
       "canonicalModName": "River Watch Set",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Light",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/107904",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "107904",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/107904/107904-1704598194-1637021938.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/107904",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3160,8 +3160,8 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Adds an imperial themed light armor set & a weapon; tier inferred: Light (mentions light armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3172,9 +3172,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/108749",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "108749",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/108749/108749-1704725488-41665985.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/108749",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3197,7 +3197,7 @@
         "DOD: 1.4.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: My patches for this amazing armor mod. HIMBO, CBBE and UNP footwear patches. Helmets full beast races support. Optional non-HDT patch. Several minor fixes and tweaks. ESL.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3244,9 +3244,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122469",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "122469",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/122469/122469-1719073154-121711487.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122469",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3266,20 +3266,20 @@
         "DOD: 1.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds the Rolling Waves armor set, inspired by Beidou from Genshin Impact.HDT-SMP physics added to the coat.For CBBE, 3BA, UBE and BHUNP.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-126983",
       "displayName": "Rover Armor",
       "canonicalModName": "Rover Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/126983",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "126983",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/126983/126983-1724616711-889799933.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/126983",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3298,8 +3298,8 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: A immersive outfit for adventurers in three colors.For CBBE, 3BA, UBE, BHUNP and HIMBO with immersive HDT-SMP physics.Light, heavy armor or clothing.; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3310,9 +3310,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120373",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "120373",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/120373/120373-1716823784-1942943310.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120373",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3332,7 +3332,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A modular female armor set, perfect for a loyal and brave knightess.Also contains matching shield and weapons. For CBBE, 3BA, UBE and BHUNP. Vanilla, Complex Material and PBR support.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3343,9 +3343,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/40606",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "40606",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/40606/40606-1600460766-1489021937.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/40606",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3368,20 +3368,20 @@
         "DOD: 1.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Informal, hard-wearing clothing for the discerning adventurer.Multiple outfits for both male and female characters with full weight slider support, built earlier in 2020 as a learning exercise in quarantine.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-76879",
       "displayName": "Satisfactory Facial Piercings",
       "canonicalModName": "Satisfactory Facial Piercings",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/76879",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "76879",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/76879/76879-1665503948-650212131.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/76879",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3403,8 +3403,8 @@
         "MOM: 0.5.1.0",
         "DOD: 0.5.1.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: While there already are some great mods adding facial piercings they share one fatal flaw: They cannot respond to CharGen and expression morphs. The piercings from this mod can (see gif below).; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3450,13 +3450,13 @@
       "catalogId": "skyrimspecialedition-133720",
       "displayName": "Senecio Armor",
       "canonicalModName": "Senecio Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Mixed",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133720",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "133720",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/133720/133720-1731789315-1380840671.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133720",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3475,21 +3475,21 @@
         "MOM: 1.2.0.0",
         "DOD: 1.2.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: A simple lorefriendly female armor set.For 3BA and UBE. Heavy or light armor.Vanilla, Complex Material and PBR support.; tier inferred: Mixed (mentions multiple armor weight variants)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-143720",
       "displayName": "Shas' Chains and Silks",
       "canonicalModName": "Shas' Chains and Silks",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/143720",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "143720",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/143720/143720-1742251872-1861687941.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/143720",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3508,8 +3508,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Presenting, from me to thee. The exquisite, pristine, immaculate and wholesomely sexy: Chains & SilksThe package includes, but It's not limited to; SMP physics, succulent silkworks, magnificent metalwork, & emotional support*Shas' inc. is; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3520,9 +3520,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133218",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "133218",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/133218/133218-1730899396-357629776.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/133218",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3542,20 +3542,20 @@
         "DOD: 1.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Presenting, from me to thee. The exquisite, pristine, immaculate and wholesomely sexy: Devil's CorsetThe package includes, but It's not limited to; SMP physics, succulent leatherwork, magnificent metalwork, and emotional support*Shas' inc.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-120716",
       "displayName": "Shas' Equipable Hand Nails",
       "canonicalModName": "Shas' Equipable Hand Nails",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120716",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "120716",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/120716/120716-1717262265-1263578152.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120716",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3577,21 +3577,21 @@
         "MOM: 1.0.3.0",
         "DOD: 1.0.3.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Girly 3D nails previously only available in racemenu slider form no coming to you in itemised formAgain, brought to you by a 6'2\" neckbeard; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-124243",
       "displayName": "Shino - Accessories - Magic Creatures",
       "canonicalModName": "Shino - Accessories - Magic Creatures",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/124243",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "124243",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/124243/124243-1725150520-945086966.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/124243",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3613,21 +3613,21 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Are you a magical creature?,  No? well either, so use this! This mod Contains Ears and Horns for your Magic Characters. for men and women; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-69920",
       "displayName": "Silt Strider Armor",
       "canonicalModName": "Silt Strider Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/69920",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "69920",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/69920/69920-1655679069-763396572.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/69920",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3649,21 +3649,21 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Adds a dunmer themed heavy armor set; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-79088",
       "displayName": "Silver Armor",
       "canonicalModName": "Silver Armor SE",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/79088",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "79088",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/79088/79088-1668940760-1995561972.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/79088",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3685,8 +3685,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: New heavy armor. Новая тяжелая броня.; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3697,9 +3697,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/131162",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "131162",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/131162/131162-1760589248-1809167652.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/131162",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3719,7 +3719,7 @@
         "DOD: 0.43.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: This was an outfit was to be finished on Halloween last year. It's been finished for this year Halloween!!! Happy Halloween!!!",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3730,9 +3730,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/28978",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "28978",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/28978/28978-1568376543-458680889.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/28978",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "TOT"
       ],
@@ -3743,20 +3743,20 @@
         "TOT: 1.1.4.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds underwear to bodies when you loot them, so that NPCs don't all appear to be going commando if you're using a naked skin.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-110894",
       "displayName": "SMP Earrings and Necklaces",
       "canonicalModName": "SMP Earrings and Necklaces",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110894",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "110894",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/110894/110894-1707082997-1270298437.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/110894",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3778,21 +3778,21 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: 10 earrings, 5 necklaces, 2 eyepatches, all with SMP.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-137725",
       "displayName": "Sorcerer Outfits",
       "canonicalModName": "Sorcerer Outfits",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/137725",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "137725",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/137725/137725-1735662261-1466194814.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/137725",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3814,21 +3814,21 @@
         "MOM: 1.2.0.0",
         "DOD: 1.2.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: A set of Sorcerer Outfits with physics for male and female characters in a variety of colors. ESL. UNP base for female characters.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-160108",
       "displayName": "Speed Buster Heart Girl",
       "canonicalModName": "Speed Buster Heart Girl",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/160108",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "160108",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/160108/160108-1759069103-628326514.jpg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/160108",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3847,21 +3847,21 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Hearty outfit for CBBE 3BA and BHUNP; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-125628",
       "displayName": "Star Guardian",
       "canonicalModName": "Star Guardian",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Light",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/125628",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "125628",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/125628/125628-1729927770-513929846.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/125628",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -3880,21 +3880,21 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: An adorable girly modular armored dress in three colors.For CBBE, 3BA, UBE, BHUNP and HIMBO with immersive HDT-SMP physics.Light armor or clothing.; tier inferred: Light (mentions light armor)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-35229",
       "displayName": "Stoneheart Jewelry SMP",
       "canonicalModName": "Stoneheart Jewelry SMP",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/35229",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "35229",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/35229/35229-1587922443-1381731956.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/35229",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3916,8 +3916,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Black Glasses and 2 variants of Earrings to accessorize your beauties! Now ported to Skyrim Special Edition! With Skinned-Mesh Physics (SMP) support!; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3928,9 +3928,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/100787",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "100787",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/100787/100787-1733605621-1245071268.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/100787",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3953,7 +3953,7 @@
         "DOD: 2.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds new lore-friendly stormcloak themed armors and weapons . Distributed through SPID. Flagged as ESL",
       "lastVerified": "2026-05-23"
     },
     {
@@ -3964,9 +3964,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136041",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "136041",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/136041/136041-1733872150-400689228.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136041",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -3989,7 +3989,7 @@
         "DOD: 1.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds a new lore friendly Thalmor Assassin armor set, weapons, and enemies. Flagged as ESL.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4000,9 +4000,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/37589",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "37589",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/37589/37589-1592911827-1363345221.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/37589",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4025,7 +4025,7 @@
         "DOD: 1.4.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: An alchemist in Skyrim must scale mountains, weather blizzards, wade through swamps and do it all with a delicate hand and keen eye for the reagents of their work. But who's to say they can't look good doing it? A vanilla mash-up armor mod,",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4036,9 +4036,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/99201",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "99201",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/99201/99201-1693077250-1013291367.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/99201",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4061,7 +4061,7 @@
         "DOD: f1.01"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Unisex leather & cloth garments for lightweight adventurers with SMP cloth physics.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4072,9 +4072,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/107546",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "107546",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/107546/107546-1703247871-875765394.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/107546",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4097,7 +4097,7 @@
         "DOD: 1.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: My fixes and tweaks for this amazing armor set. No symbols on front and back patches. Non HDT patch. Missing Argonian and Khajiit Bracers fixed. \"Warm\" keyword added. 4K-2K-1K. ESL.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4108,9 +4108,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122550",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "122550",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/122550/122550-1721007905-297811198.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122550",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4133,7 +4133,7 @@
         "DOD: f1.01"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: 2 unisex low-fantasy outfits to suit adventurers light on their feet, with SMP cloth physics.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4144,9 +4144,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136068",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "136068",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/136068/119457-1733838316-1506336668.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136068",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4169,7 +4169,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Non-HDT patch. 2K and 1K optimized textures. \"Warm\" keyword for the Survival mod. 5 new enchanted robes, ideal for pure mage characters. Sentry Unarmored Tunic added.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4212,13 +4212,13 @@
       "catalogId": "skyrimspecialedition-142288",
       "displayName": "Tops And Bottoms - Casual Pirate Separated",
       "canonicalModName": "Tops And Bottoms - Casual Pirate Separated",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/142288",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "142288",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/142288/142288-1739978091-1146264006.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/142288",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4245,8 +4245,8 @@
         "DOD: 1.1.2.0",
         "DOD: 1.1.1.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: This mod makes the Casual Pirate Outfit by petiteemerald modular, separate it into Shirt, Pants, and Belt/Sash Belt with 5 variations, and converted to CBBE 3BA/BHUNP/HIMBO/Vanilla Female & Male body types.ESL flagged ESP, Survival Mode; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4257,9 +4257,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136007",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "136007",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/136007/136007-1734020512-2115082037.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136007",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4285,7 +4285,7 @@
         "VOV: 1.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: New standard of the quality clothes for the cities in Skyrim, the \"Common Clothing Expansion\" by Hornclonic﻿ is now modular, and unisex(mostly) with CBBE 3BA, BHUNP, HIMBO, and Vanilla Female & Male conversion.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4296,9 +4296,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/131319",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "131319",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/131319/131319-1728654115-1985468667.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/131319",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4321,7 +4321,7 @@
         "DOD: 1.3.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: This time, the nice armor & weapon set with fun quests/follower is separated to tops and bottoms. As usual, BHUNP, CBBE 3BA, HIMBO, and vanilla body types supported. Including bodyslids & prebuilt meshes, and ESL flagged FOMOD.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4332,9 +4332,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/54471",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "54471",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/54471/54471-1629848241-384071375.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/54471",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4357,7 +4357,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Informal, hard-wearing clothing for the toughened traveler. Outfits for both male and female characters, built in 2021 as an ongoing learning exercise in this never-ending pandemic.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4436,13 +4436,13 @@
       "catalogId": "skyrimspecialedition-120203",
       "displayName": "Tribal Clothes",
       "canonicalModName": "Tribal Clothes",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120203",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "120203",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/120203/120203-1744998138-2069672006.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/120203",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -4461,8 +4461,8 @@
         "MOM: 1.5.0.0",
         "DOD: 1.5.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Tribal Clothes outfit set converted from Oblivion/Oldrim? to CBBE 3BA and BHUNP with SMP added. 4 colors.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4473,9 +4473,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/71182",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "71182",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/71182/71182-1735744223-1410045898.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/71182",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4503,7 +4503,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: This mod adds an armor mashup that I originally created for Serana. After seeing a lot of interested in it, I decided to share with everyone =)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4514,9 +4514,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/99021",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "99021",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/99021/99021-1692812580-1154919096.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/99021",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "TOT"
       ],
@@ -4527,7 +4527,7 @@
         "TOT: d2025.8.31.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Immersion; summary: DLL-ified version of wSkeever's Equippable Underwear for NPCs mod",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4538,9 +4538,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/126887",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "126887",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/126887/126887-1723821641-1130265139.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/126887",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4563,20 +4563,20 @@
         "DOD: 1.4.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: This mod add an armor mashup with a bow and some arrow that i originally designed for Auri ! =D",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-17114",
       "displayName": "VickusDickus' Khajiiti Apex Armory Reforged",
       "canonicalModName": "VickusDickus' Khajiiti Apex Armory Reforged",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Mixed",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/17114",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "17114",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/17114/17114-1701312263-784363112.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/17114",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4598,21 +4598,21 @@
         "MOM: 2.1.6.0",
         "DOD: 2.1.6.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Weapons and Armour; summary: This mod adds a full set of Khajiit themed armour and weapons, all made from scratch by me, inspired by the Khajiit armour featured in ESO. All screenshots are the 2k version.This mod features both heavy armour and light armour variants, as; tier inferred: Mixed (mentions both light and heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-124613",
       "displayName": "Vindicator Armor",
       "canonicalModName": "Vindicator Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Mixed",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/124613",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "124613",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/124613/124613-1721589768-1906622129.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/124613",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -4631,8 +4631,8 @@
         "MOM: 1.2.0.0",
         "DOD: 1.2.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: A semi immersive highly modular plate armor. For CBBE, 3BA, UBE, BHUNP and HIMBO.Heavy or light armor. Vanilla, Complex Material and PBR support.; tier inferred: Mixed (mentions multiple armor weight variants)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4708,13 +4708,13 @@
       "catalogId": "skyrimspecialedition-112641",
       "displayName": "Wandering Summoner outfit (3BA SMP)",
       "canonicalModName": "Wandering Summoner outfit (3BA SMP)",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/112641",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "112641",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/112641/112641-1708970727-984919254.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/112641",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4736,8 +4736,8 @@
         "MOM: 1.16.0.0",
         "DOD: 1.16.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: New outfit for your female mage; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4748,9 +4748,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/128851",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "128851",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/128851/128851-1725960705-351013625.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/128851",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4778,20 +4778,20 @@
         "DOD: 1.3.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: My practice project in Blender, decide to port it into Skyrim. Based mostly on Warhammer Total war's Wood elves Wardancer concept art",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-103601",
       "displayName": "Wayrest Sellsword Set",
       "canonicalModName": "Wayrest Sellsword Set",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/103601",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "103601",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/103601/103601-1699199520-1801211080.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/103601",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4813,8 +4813,8 @@
         "MOM: 1.1.0.0",
         "DOD: 1.1.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: Adds a breton themed heavy armor set & a weapon; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4825,9 +4825,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/115935",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "115935",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/115935/115935-1712327647-1725226346.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/115935",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4850,7 +4850,7 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Weapons and Armour; summary: My patches for this amazing armor mod. Full beast races support. Blood decals added to the sword. Optional Non-HDT patch, 2K-1K optimized textures, and more.",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4861,9 +4861,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/112793",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "112793",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/112793/112793-1714329367-539665257.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/112793",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -4883,7 +4883,7 @@
         "DOD: 130.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: a modular, female only armor set with a stylized casual knight theme for 3ba bodyslide",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4894,9 +4894,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/81085",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "81085",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/81085/81085-1676163795-1707686505.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/81085",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4919,20 +4919,20 @@
         "DOD: 0.5.2.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: A new set of craftable clothing and staff in the style of a witch who lives in the wilderness of Skyrim.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-40963",
       "displayName": "Wilderness Witch Outfit",
       "canonicalModName": "Wilderness Witch Outfit",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/40963",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "40963",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/40963/40963-1601427226-1284167217.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/40963",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4954,8 +4954,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: A stylish witch outfit for a stylish witch.An outfit for female characters with full weight slider support, built earlier in 2020 as a learning exercise in quarantine. I'd forgotten about this and found it while preparing the slightly newer; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -4966,9 +4966,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/49556",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "49556",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/49556/49556-1620317409-1118566235.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/49556",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -4991,20 +4991,20 @@
         "DOD: 1.0.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds six new colors of the Wilderness Witch Outfit by QuarantineCouture. Blue, yellow, purple, green, black, and white.",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-60842",
       "displayName": "Wind Ruler Armor",
       "canonicalModName": "Wind Ruler Armor SE",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Heavy",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/60842",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "60842",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/60842/110281-1640613198-2065390598.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/60842",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -5026,21 +5026,21 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: New unique heavy armor and two-handed sword; tier inferred: Heavy (mentions heavy armor)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-136189",
       "displayName": "Wolf Leather Armor",
       "canonicalModName": "Wolf Leather Armor",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Light",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136189",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "136189",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/136189/136189-1734057033-1956555754.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/136189",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -5062,8 +5062,8 @@
         "MOM: 1.2.0.0",
         "DOD: 1.2.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Armour; summary: A new light armor for the Companions.; tier inferred: Light (mentions light armor)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -5074,9 +5074,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/147529",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "147529",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/147529/147529-1744756957-1840034524.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/147529",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -5099,20 +5099,20 @@
         "DOD: 1.1.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds breton themed robes",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-148172",
       "displayName": "Woodland Wizard Robes - My patches SE by Xtudo",
       "canonicalModName": "Woodland Wizard Robes - My patches SE by Xtudo",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/148172",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "148172",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/148172/148172-1745097504-39035234.jpeg",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/148172",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -5134,8 +5134,8 @@
         "MOM: 1.2.0.0",
         "DOD: 1.2.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Non-HDT patch. Full beast races support. Added Robes without cloak. Optional 2K-1K optimized textures. Some fixes/tweaks and more.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     },
     {
@@ -5146,9 +5146,9 @@
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/104528",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "104528",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/104528/104528-1699716172-5023160.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/104528",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "TOT",
@@ -5171,20 +5171,20 @@
         "DOD: 1.2.0.0"
       ],
       "status": "Needs Weight",
-      "notes": "",
+      "notes": "Mod Search category: Armour; summary: Adds new standalone armor and greatsword inspired by Medieval Fantasy. (ESL Flagged, 4K Resolution)",
       "lastVerified": "2026-05-23"
     },
     {
       "catalogId": "skyrimspecialedition-122169",
       "displayName": "Yoga Clothes",
       "canonicalModName": "Yoga Clothes",
-      "armorWeightTier": "Unknown",
+      "armorWeightTier": "Clothing",
       "nexusUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122169",
       "nexusGameDomain": "skyrimspecialedition",
       "nexusModId": "122169",
-      "imageUrl": "",
-      "imageSourceUrl": "",
-      "imageRank": "",
+      "imageUrl": "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/122169/122169-1718726680-1496717212.png",
+      "imageSourceUrl": "https://www.nexusmods.com/skyrimspecialedition/mods/122169",
+      "imageRank": "mod-search-thumbnail",
       "includedInModlists": [
         "JOJ",
         "HOH",
@@ -5203,8 +5203,8 @@
         "MOM: 1.0.0.0",
         "DOD: 1.0.0.0"
       ],
-      "status": "Needs Weight",
-      "notes": "",
+      "status": "Ready",
+      "notes": "Mod Search category: Clothing and Accessories; summary: Adds a set of yoga clothes for CBBE 3BA and BHUNP. 11 colors.; tier inferred: Clothing (clothing/outfit wording without armor wording)",
       "lastVerified": "2026-05-23"
     }
   ]
