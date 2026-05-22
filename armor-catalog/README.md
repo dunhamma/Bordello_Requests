@@ -7,6 +7,7 @@ This workspace contains a maintainable armor catalog for The Modding Bordello mo
 - `data/armor-catalog.csv` is the editable source of truth.
 - `site/armor-catalog.json` is the structured website artifact.
 - `site/armor-catalog.html` is a standalone publishable catalog page.
+- `website-dropin/` is a Next.js App Router drop-in shaped for `HerrSchtevie/themoddingbordello`.
 - `scripts/build-armor-catalog.mjs` refreshes candidates from public load-order pages, validates the CSV, and regenerates the website artifacts.
 
 ## Update Workflow
@@ -77,6 +78,20 @@ From the repo root, use the folder-prefixed script path instead:
 ```powershell
 node armor-catalog/scripts/serve-site.mjs 4173
 ```
+
+## The Modding Bordello Website Drop-in
+
+The current website is a Next.js App Router project with Tailwind `bordello` colors and content files under `content/`. After running `node scripts/build-armor-catalog.mjs --build`, copy these files from `website-dropin/` into Schtevie's website repo:
+
+```text
+app/armor-catalog/page.tsx
+components/armor/ArmorCatalogClient.tsx
+lib/armorCatalog.ts
+content/armor-catalog/armor-catalog.json
+content/armor-catalog/armor-catalog.csv
+```
+
+Optionally add `{ label: 'Armor Catalog', href: '/armor-catalog' }` to the website's `components/nav/GlobalNav.tsx` `navItems` array.
 
 ## Nexus Images
 

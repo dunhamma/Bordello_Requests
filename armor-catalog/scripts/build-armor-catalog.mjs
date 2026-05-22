@@ -6,8 +6,12 @@ const SCRIPT_DIR = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.dirname(SCRIPT_DIR);
 const DATA_DIR = path.join(ROOT, "data");
 const SITE_DIR = path.join(ROOT, "site");
+const WEBSITE_DROPIN_DIR = path.join(ROOT, "website-dropin");
+const WEBSITE_DROPIN_CONTENT_DIR = path.join(WEBSITE_DROPIN_DIR, "content", "armor-catalog");
 const CSV_PATH = path.join(DATA_DIR, "armor-catalog.csv");
 const JSON_PATH = path.join(SITE_DIR, "armor-catalog.json");
+const WEBSITE_DROPIN_JSON_PATH = path.join(WEBSITE_DROPIN_CONTENT_DIR, "armor-catalog.json");
+const WEBSITE_DROPIN_CSV_PATH = path.join(WEBSITE_DROPIN_CONTENT_DIR, "armor-catalog.csv");
 const HTML_PATH = path.join(SITE_DIR, "armor-catalog.html");
 
 const COLUMNS = [
@@ -93,9 +97,13 @@ if (galleryCandidatesPath) {
 if (shouldBuild) {
   const validation = validateRows(rows);
   await writeJson(JSON_PATH, rows, validation);
+  await writeJson(WEBSITE_DROPIN_JSON_PATH, rows, validation, {
+    source: "content/armor-catalog/armor-catalog.csv"
+  });
+  await fs.copyFile(CSV_PATH, WEBSITE_DROPIN_CSV_PATH);
   await writeHtml(HTML_PATH, rows, validation);
   printValidation(validation);
-  console.log(`Built ${relative(JSON_PATH)} and ${relative(HTML_PATH)}.`);
+  console.log(`Built ${relative(JSON_PATH)}, ${relative(WEBSITE_DROPIN_JSON_PATH)}, ${relative(WEBSITE_DROPIN_CSV_PATH)}, and ${relative(HTML_PATH)}.`);
 }
 
 if (!shouldRefresh && !shouldBuild && !shouldEnrichNexus && !shouldEnrichMo2 && !galleryCandidatesPath) {
@@ -870,10 +878,10 @@ function validateRows(sourceRows) {
   };
 }
 
-async function writeJson(filePath, sourceRows, validation) {
+async function writeJson(filePath, sourceRows, validation, options = {}) {
   const payload = {
     generatedAt: validation.generatedAt,
-    source: "data/armor-catalog.csv",
+    source: options.source || "data/armor-catalog.csv",
     modlists: MODLISTS,
     validation: {
       totalRows: validation.totalRows,
@@ -904,6 +912,7 @@ async function writeJson(filePath, sourceRows, validation) {
         lastVerified: row.last_verified
       }))
   };
+  await fs.mkdir(path.dirname(filePath), { recursive: true });
   await fs.writeFile(filePath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 }
 

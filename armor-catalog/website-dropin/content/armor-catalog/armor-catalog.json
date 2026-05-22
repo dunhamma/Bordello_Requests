@@ -1,6 +1,6 @@
 {
   "generatedAt": "2026-05-22T23:26:56.751Z",
-  "source": "data/armor-catalog.csv",
+  "source": "content/armor-catalog/armor-catalog.csv",
   "modlists": [
     {
       "slug": "joj",
