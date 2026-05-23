@@ -5,12 +5,15 @@ This workspace contains a maintainable armor catalog for The Modding Bordello mo
 ## Files
 
 - `data/armor-catalog.csv` is the editable source of truth.
+- `docs/data-completion-guide.md` explains how to fill missing weights, URLs, images, and website drop-in data.
 - `site/armor-catalog.json` is the structured website artifact.
 - `site/armor-catalog.html` is a standalone publishable catalog page.
 - `website-dropin/` is a Next.js App Router drop-in shaped for `HerrSchtevie/themoddingbordello`.
 - `scripts/build-armor-catalog.mjs` refreshes candidates from public load-order pages, validates the CSV, and regenerates the website artifacts.
 
 ## Update Workflow
+
+For the full maintainer workflow, including OS-agnostic MO2 armor weight scanning and missing image/metadata recovery, see `docs/data-completion-guide.md`.
 
 From the `armor-catalog` folder:
 
