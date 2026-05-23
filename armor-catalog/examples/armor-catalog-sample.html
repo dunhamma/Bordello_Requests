@@ -1,0 +1,465 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bordello Armor Catalog Sample</title>
+  <style>
+    :root {
+      color-scheme: dark;
+      --bg: #0a0a0f;
+      --surface: #12121a;
+      --surface-2: #181824;
+      --border: #2a2a3d;
+      --text: #f4f4f5;
+      --muted: #a1a1aa;
+      --accent: #7a0000;
+      --ready: #86efac;
+      --warn: #facc15;
+      font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+      letter-spacing: 0;
+    }
+
+    a {
+      color: inherit;
+    }
+
+    .shell {
+      max-width: 1180px;
+      margin: 0 auto;
+      padding: 28px 18px 44px;
+    }
+
+    header {
+      display: grid;
+      grid-template-columns: minmax(0, 1fr) auto;
+      gap: 18px;
+      align-items: end;
+      border-bottom: 1px solid var(--border);
+      padding-bottom: 18px;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 2.4rem;
+      line-height: 1.05;
+    }
+
+    .lede {
+      max-width: 720px;
+      margin: 10px 0 0;
+      color: var(--muted);
+      line-height: 1.55;
+    }
+
+    .stats {
+      display: grid;
+      grid-template-columns: repeat(3, minmax(90px, 1fr));
+      gap: 8px;
+      min-width: 300px;
+    }
+
+    .stat {
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      padding: 10px;
+    }
+
+    .stat strong {
+      display: block;
+      font-size: 1.45rem;
+    }
+
+    .stat span {
+      color: var(--muted);
+      font-size: .8rem;
+    }
+
+    .toolbar {
+      display: grid;
+      grid-template-columns: minmax(220px, 1fr) 160px 160px auto;
+      gap: 10px;
+      margin: 18px 0;
+    }
+
+    input,
+    select,
+    button {
+      min-height: 42px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+      color: var(--text);
+      padding: 0 12px;
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+      font-weight: 700;
+    }
+
+    .result-line {
+      display: flex;
+      justify-content: space-between;
+      gap: 12px;
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(245px, 1fr));
+      gap: 14px;
+    }
+
+    .card {
+      overflow: hidden;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    .thumb {
+      aspect-ratio: 16 / 9;
+      background: var(--surface-2);
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: .92rem;
+    }
+
+    .thumb img {
+      width: 100%;
+      height: 100%;
+      display: block;
+      object-fit: cover;
+      object-position: top center;
+    }
+
+    .body {
+      display: grid;
+      gap: 11px;
+      padding: 13px;
+    }
+
+    h2 {
+      margin: 0;
+      font-size: 1.02rem;
+      line-height: 1.25;
+    }
+
+    .chips {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 6px;
+    }
+
+    .chip {
+      min-height: 24px;
+      border-radius: 999px;
+      background: var(--surface-2);
+      color: var(--muted);
+      padding: 3px 8px;
+      font-size: .76rem;
+    }
+
+    .tier {
+      color: var(--text);
+      border: 1px solid var(--border);
+    }
+
+    .ready {
+      color: var(--ready);
+    }
+
+    .needs {
+      color: var(--warn);
+    }
+
+    .nexus {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 36px;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface-2);
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    .table-wrap {
+      overflow-x: auto;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      background: var(--surface);
+    }
+
+    table {
+      width: 100%;
+      min-width: 760px;
+      border-collapse: collapse;
+    }
+
+    th,
+    td {
+      padding: 10px;
+      border-bottom: 1px solid var(--border);
+      text-align: left;
+      vertical-align: top;
+      font-size: .92rem;
+    }
+
+    th {
+      background: var(--surface-2);
+      color: var(--muted);
+      font-size: .78rem;
+      text-transform: uppercase;
+    }
+
+    .hidden {
+      display: none !important;
+    }
+
+    .empty {
+      border: 1px dashed var(--border);
+      border-radius: 8px;
+      padding: 28px;
+      text-align: center;
+      color: var(--muted);
+    }
+
+    @media (max-width: 760px) {
+      header,
+      .toolbar {
+        grid-template-columns: 1fr;
+      }
+
+      .stats {
+        min-width: 0;
+        grid-template-columns: repeat(3, 1fr);
+      }
+    }
+  </style>
+</head>
+<body>
+  <main class="shell">
+    <header>
+      <div>
+        <h1>Armor Catalog Sample</h1>
+        <p class="lede">A self-contained demo page for the Bordello armor catalog. Replace the sample data in the script block with generated catalog JSON entries or wire it to a static JSON file.</p>
+      </div>
+      <section class="stats" aria-label="Catalog stats">
+        <div class="stat"><strong id="totalCount">0</strong><span>entries</span></div>
+        <div class="stat"><strong id="readyCount">0</strong><span>ready</span></div>
+        <div class="stat"><strong id="unknownCount">0</strong><span>unknown tier</span></div>
+      </section>
+    </header>
+
+    <section class="toolbar" aria-label="Catalog filters">
+      <input id="search" type="search" placeholder="Search by name, tier, modlist...">
+      <select id="modlist">
+        <option value="">All modlists</option>
+        <option value="JOJ">JOJ</option>
+        <option value="TOT">TOT</option>
+        <option value="HOH">HOH</option>
+        <option value="MOM">MOM</option>
+        <option value="DOD">DOD</option>
+        <option value="VOV">VOV</option>
+      </select>
+      <select id="tier">
+        <option value="">All tiers</option>
+        <option>Clothing</option>
+        <option>Light</option>
+        <option>Heavy</option>
+        <option>Mixed</option>
+        <option>Unknown</option>
+      </select>
+      <button id="viewToggle" type="button">Table view</button>
+    </section>
+
+    <div class="result-line">
+      <span id="resultCount">0 shown</span>
+      <span>Standalone sample file</span>
+    </div>
+
+    <section id="cards" class="grid" aria-label="Armor cards"></section>
+    <section id="table" class="table-wrap hidden" aria-label="Armor table"></section>
+    <section id="empty" class="empty hidden">No entries match the current filters.</section>
+  </main>
+
+  <script>
+    const CATALOG = [
+      {
+        name: "Adventurer HDT-SMP Armor",
+        tier: "Light",
+        status: "Ready",
+        modlists: ["JOJ", "TOT", "HOH", "MOM", "DOD"],
+        nexusUrl: "https://www.nexusmods.com/skyrimspecialedition/mods/91741",
+        imageUrl: "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/91741/91741-1684570475-1240779486.jpeg"
+      },
+      {
+        name: "Balfieran Knight Set",
+        tier: "Heavy",
+        status: "Ready",
+        modlists: ["JOJ", "TOT", "HOH", "MOM", "DOD"],
+        nexusUrl: "https://www.nexusmods.com/skyrimspecialedition/mods/110420",
+        imageUrl: "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/110420/110420-1708083272-1518538824.jpeg"
+      },
+      {
+        name: "Black Mage Armor",
+        tier: "Mixed",
+        status: "Ready",
+        modlists: ["JOJ", "TOT", "HOH", "MOM", "DOD"],
+        nexusUrl: "https://www.nexusmods.com/skyrimspecialedition/mods/356",
+        imageUrl: "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/356/356-1546310104-1265722365.png"
+      },
+      {
+        name: "Tribal Clothes",
+        tier: "Clothing",
+        status: "Ready",
+        modlists: ["JOJ", "HOH", "MOM", "DOD"],
+        nexusUrl: "https://www.nexusmods.com/skyrimspecialedition/mods/120203",
+        imageUrl: "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/120203/120203-1744998138-2069672006.png"
+      },
+      {
+        name: "Armor of Clavicus Vile (HDT-SMP)",
+        tier: "Unknown",
+        status: "Needs Weight",
+        modlists: ["JOJ", "TOT", "HOH", "MOM", "DOD"],
+        nexusUrl: "https://www.nexusmods.com/skyrimspecialedition/mods/145584",
+        imageUrl: "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/145584/145584-1742769588-2143608128.png"
+      },
+      {
+        name: "Woodland Wizard Robes",
+        tier: "Unknown",
+        status: "Needs Weight",
+        modlists: ["JOJ", "TOT", "HOH", "MOM", "DOD"],
+        nexusUrl: "https://www.nexusmods.com/skyrimspecialedition/mods/147529",
+        imageUrl: "https://staticdelivery.nexusmods.com/mods/1704/images/thumbnails/147529/147529-1744756957-1840034524.jpeg"
+      }
+    ];
+
+    const state = { view: "cards" };
+    const els = {
+      totalCount: document.getElementById("totalCount"),
+      readyCount: document.getElementById("readyCount"),
+      unknownCount: document.getElementById("unknownCount"),
+      resultCount: document.getElementById("resultCount"),
+      search: document.getElementById("search"),
+      modlist: document.getElementById("modlist"),
+      tier: document.getElementById("tier"),
+      viewToggle: document.getElementById("viewToggle"),
+      cards: document.getElementById("cards"),
+      table: document.getElementById("table"),
+      empty: document.getElementById("empty")
+    };
+
+    els.totalCount.textContent = CATALOG.length;
+    els.readyCount.textContent = CATALOG.filter((entry) => entry.status === "Ready").length;
+    els.unknownCount.textContent = CATALOG.filter((entry) => entry.tier === "Unknown").length;
+
+    for (const input of [els.search, els.modlist, els.tier]) {
+      input.addEventListener("input", render);
+    }
+
+    els.viewToggle.addEventListener("click", () => {
+      state.view = state.view === "cards" ? "table" : "cards";
+      els.viewToggle.textContent = state.view === "cards" ? "Table view" : "Card view";
+      render();
+    });
+
+    function filteredEntries() {
+      const query = els.search.value.trim().toLowerCase();
+      const modlist = els.modlist.value;
+      const tier = els.tier.value;
+      return CATALOG.filter((entry) => {
+        const text = [entry.name, entry.tier, entry.status, entry.modlists.join(" ")].join(" ").toLowerCase();
+        return (!query || text.includes(query))
+          && (!modlist || entry.modlists.includes(modlist))
+          && (!tier || entry.tier === tier);
+      }).sort((a, b) => a.name.localeCompare(b.name));
+    }
+
+    function render() {
+      const entries = filteredEntries();
+      els.resultCount.textContent = `${entries.length} shown`;
+      els.empty.classList.toggle("hidden", entries.length > 0);
+      els.cards.classList.toggle("hidden", state.view !== "cards" || entries.length === 0);
+      els.table.classList.toggle("hidden", state.view !== "table" || entries.length === 0);
+      if (state.view === "cards") renderCards(entries);
+      if (state.view === "table") renderTable(entries);
+    }
+
+    function renderCards(entries) {
+      els.cards.innerHTML = entries.map((entry) => `
+        <article class="card">
+          <div class="thumb">
+            ${entry.imageUrl ? `<img src="${escapeAttr(entry.imageUrl)}" alt="${escapeAttr(entry.name)} screenshot" loading="lazy" referrerpolicy="no-referrer">` : "Screenshot pending"}
+          </div>
+          <div class="body">
+            <h2>${escapeHtml(entry.name)}</h2>
+            <div class="chips">
+              <span class="chip tier">${escapeHtml(entry.tier)}</span>
+              ${entry.modlists.map((modlist) => `<span class="chip">${escapeHtml(modlist)}</span>`).join("")}
+              <span class="chip ${entry.status === "Ready" ? "ready" : "needs"}">${escapeHtml(entry.status)}</span>
+            </div>
+            <a class="nexus" href="${escapeAttr(entry.nexusUrl)}" target="_blank" rel="noopener noreferrer">Nexus Mods</a>
+          </div>
+        </article>
+      `).join("");
+    }
+
+    function renderTable(entries) {
+      els.table.innerHTML = `
+        <table>
+          <thead>
+            <tr><th>Mod</th><th>Tier</th><th>Modlists</th><th>Status</th><th>Nexus</th></tr>
+          </thead>
+          <tbody>
+            ${entries.map((entry) => `
+              <tr>
+                <td>${escapeHtml(entry.name)}</td>
+                <td>${escapeHtml(entry.tier)}</td>
+                <td>${entry.modlists.map(escapeHtml).join(", ")}</td>
+                <td>${escapeHtml(entry.status)}</td>
+                <td><a href="${escapeAttr(entry.nexusUrl)}" target="_blank" rel="noopener noreferrer">Open</a></td>
+              </tr>
+            `).join("")}
+          </tbody>
+        </table>
+      `;
+    }
+
+    function escapeHtml(value) {
+      return String(value).replace(/[&<>"']/g, (char) => ({
+        "&": "&amp;",
+        "<": "&lt;",
+        ">": "&gt;",
+        '"': "&quot;",
+        "'": "&#39;"
+      }[char]));
+    }
+
+    function escapeAttr(value) {
+      return escapeHtml(value);
+    }
+
+    render();
+  </script>
+</body>
+</html>

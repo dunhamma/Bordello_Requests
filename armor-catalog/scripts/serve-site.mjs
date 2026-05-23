@@ -7,6 +7,7 @@ const scriptDir = path.dirname(fileURLToPath(import.meta.url));
 const projectRoot = path.dirname(scriptDir);
 const root = path.join(projectRoot, "site");
 const toolsRoot = path.join(projectRoot, "tools");
+const examplesRoot = path.join(projectRoot, "examples");
 const port = Number(process.argv[2] || process.env.PORT || 4173);
 const mimeTypes = {
   ".html": "text/html; charset=utf-8",
@@ -19,10 +20,14 @@ const server = http.createServer(async (request, response) => {
   try {
     const url = new URL(request.url || "/", `http://localhost:${port}`);
     const requestedPath = url.pathname === "/" ? "/armor-catalog.html" : url.pathname;
-    const baseRoot = requestedPath.startsWith("/tools/") ? toolsRoot : root;
-    const relativePath = requestedPath.startsWith("/tools/")
-      ? requestedPath.replace(/^\/tools\//, "/")
-      : requestedPath;
+    const baseRoot = requestedPath.startsWith("/tools/")
+      ? toolsRoot
+      : requestedPath.startsWith("/examples/")
+        ? examplesRoot
+        : root;
+    const relativePath = requestedPath
+      .replace(/^\/tools\//, "/")
+      .replace(/^\/examples\//, "/");
     const safePath = path.normalize(relativePath).replace(/^(\.\.[/\\])+/, "");
     const filePath = path.join(baseRoot, safePath);
     if (!filePath.startsWith(baseRoot)) {

@@ -6,6 +6,7 @@ This workspace contains a maintainable armor catalog for The Modding Bordello mo
 
 - `data/armor-catalog.csv` is the editable source of truth.
 - `docs/data-completion-guide.md` explains how to fill missing weights, URLs, images, and website drop-in data.
+- `examples/armor-catalog-sample.html` is a small self-contained demo anyone can open directly.
 - `site/armor-catalog.json` is the structured website artifact.
 - `site/armor-catalog.html` is a standalone publishable catalog page.
 - `website-dropin/` is a Next.js App Router drop-in shaped for `HerrSchtevie/themoddingbordello`.
