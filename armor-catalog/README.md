@@ -8,6 +8,7 @@ This workspace contains a maintainable armor catalog for The Modding Bordello mo
 - `docs/data-completion-guide.md` explains how to fill missing weights, URLs, images, and website drop-in data.
 - `docs/armor-stat-scanner.md` explains how to export raw per-armor plugin stats from local MO2/Wabbajack lists.
 - `examples/armor-catalog-sample.html` is a small self-contained demo anyone can open directly.
+- `examples/dod-daedric-armor-stats-smoke.csv` is a smoke-tested scanner output sample from DoD Lord's Vision using the `daedric` filter.
 - `site/armor-catalog.json` is the structured website artifact.
 - `site/armor-catalog.html` is a standalone publishable catalog page.
 - `website-dropin/` is a Next.js App Router drop-in shaped for `HerrSchtevie/themoddingbordello`.

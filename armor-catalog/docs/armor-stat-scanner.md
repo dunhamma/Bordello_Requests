@@ -89,6 +89,32 @@ python tools\bordello_armor_stat_scanner.py --help
 
 If help text appears, the script is ready.
 
+## Included Sample Output
+
+The repo includes a real smoke-tested scanner output:
+
+```text
+examples\dod-daedric-armor-stats-smoke.csv
+```
+
+It was generated from the local DoD install with this command:
+
+```powershell
+python tools\bordello_armor_stat_scanner.py `
+  --mo2-instance "D:\Wabbajack\modlists\DoD" `
+  --profile "Diaries of Dibella - Lord's Vision" `
+  --filter "daedric" `
+  --output "examples\dod-daedric-armor-stats-smoke.csv"
+```
+
+Smoke-test result:
+
+- Active plugins scanned: `3,830`
+- Total `ARMO` records parsed before filtering: `37,121`
+- Sample rows exported after `daedric` filter: `1,433`
+
+Open this file first if you want to see what the finished CSV should look like before scanning your own list.
+
 ## Scan One Installed List
 
 Use the actual folder name on disk. The public Bordello labels are currently JOJ, TOT, HOH, MOM, DOD, and VOV, but local Wabbajack/MO2 folder names may differ.
