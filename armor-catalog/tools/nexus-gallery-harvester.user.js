@@ -1,20 +1,49 @@
 // ==UserScript==
 // @name         Bordello Armor Catalog Nexus Gallery Harvester
 // @namespace    https://www.themoddingbordello.com/
-// @version      1.0.0
+// @version      1.0.1
 // @description  Harvest Nexus thumbgallery image candidates for the Bordello armor catalog from an authenticated browser session.
+// @match        http://127.0.0.1:4174/
+// @match        http://127.0.0.1:4174/*
+// @match        http://localhost:4174/
+// @match        http://localhost:4174/*
 // @match        http://127.0.0.1:*/*
 // @match        http://localhost:*/*
 // @grant        GM_xmlhttpRequest
+// @connect      www.nexusmods.com
 // @connect      nexusmods.com
+// @run-at       document-idle
+// @noframes
+// @updateURL    http://127.0.0.1:4174/tools/nexus-gallery-harvester.user.js
+// @downloadURL  http://127.0.0.1:4174/tools/nexus-gallery-harvester.user.js
 // ==/UserScript==
 
 (function () {
   "use strict";
 
+  console.info("[Bordello Armor Catalog] Nexus gallery harvester loaded.");
+  if (document.getElementById("bordello-gallery-harvester")) return;
+
+  const apiAvailable = typeof GM_xmlhttpRequest === "function";
+  const status = document.createElement("div");
+  status.textContent = apiAvailable ? "Gallery harvester loaded" : "Gallery harvester loaded, but Tampermonkey API is unavailable";
+  status.style.position = "fixed";
+  status.style.right = "16px";
+  status.style.bottom = "64px";
+  status.style.zIndex = "99999";
+  status.style.padding = "7px 10px";
+  status.style.border = "1px solid #473934";
+  status.style.borderRadius = "8px";
+  status.style.background = "#1d1917";
+  status.style.color = apiAvailable ? "#7db88f" : "#d87972";
+  status.style.font = "600 12px system-ui, sans-serif";
+  document.body.appendChild(status);
+
   const button = document.createElement("button");
+  button.id = "bordello-gallery-harvester";
   button.type = "button";
-  button.textContent = "Harvest Nexus galleries";
+  button.textContent = apiAvailable ? "Harvest Nexus galleries" : "Tampermonkey API missing";
+  button.disabled = !apiAvailable;
   button.style.position = "fixed";
   button.style.right = "16px";
   button.style.bottom = "16px";
@@ -25,7 +54,8 @@
   button.style.background = "#a9342c";
   button.style.color = "#fff";
   button.style.font = "700 14px system-ui, sans-serif";
-  button.style.cursor = "pointer";
+  button.style.cursor = apiAvailable ? "pointer" : "not-allowed";
+  button.style.opacity = apiAvailable ? "1" : "0.7";
   document.body.appendChild(button);
 
   button.addEventListener("click", async () => {

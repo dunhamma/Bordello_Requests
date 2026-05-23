@@ -120,7 +120,8 @@
         <li>Install or open Tampermonkey/Violentmonkey in this browser.</li>
         <li>Open its dashboard and create a new script.</li>
         <li>Click <strong>Copy script</strong> below, paste over the starter script, and save.</li>
-        <li>Refresh the catalog preview. The <strong>Harvest Nexus galleries</strong> button should appear.</li>
+        <li>Make sure the script toggle is enabled in the dashboard.</li>
+        <li>Refresh the catalog preview. You should see <strong>Gallery harvester loaded</strong> and the <strong>Harvest Nexus galleries</strong> button.</li>
       </ol>
       <div class="actions">
         <button class="button" type="button" id="copy-script">Copy script</button>
@@ -135,6 +136,7 @@
       <ol>
         <li>Make sure this same browser is logged into Nexus Mods.</li>
         <li>Open the catalog preview at <code id="preview-url">http://127.0.0.1:4174/</code>.</li>
+        <li>If Tampermonkey says the script has not run, check that the script is enabled and that Tampermonkey has site access for <code>127.0.0.1</code>.</li>
         <li>Click <strong>Harvest Nexus galleries</strong>.</li>
         <li>Save the downloaded file as <code>armor-catalog/data/nexus-gallery-candidates.csv</code>.</li>
         <li>Tell Codex to import it, then we can do the visual pass together.</li>
