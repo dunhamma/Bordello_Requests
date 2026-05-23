@@ -6,6 +6,7 @@ This workspace contains a maintainable armor catalog for The Modding Bordello mo
 
 - `data/armor-catalog.csv` is the editable source of truth.
 - `docs/data-completion-guide.md` explains how to fill missing weights, URLs, images, and website drop-in data.
+- `docs/armor-stat-scanner.md` explains how to export raw per-armor plugin stats from local MO2/Wabbajack lists.
 - `examples/armor-catalog-sample.html` is a small self-contained demo anyone can open directly.
 - `site/armor-catalog.json` is the structured website artifact.
 - `site/armor-catalog.html` is a standalone publishable catalog page.
@@ -15,6 +16,14 @@ This workspace contains a maintainable armor catalog for The Modding Bordello mo
 ## Update Workflow
 
 For the full maintainer workflow, including OS-agnostic MO2 armor weight scanning and missing image/metadata recovery, see `docs/data-completion-guide.md`.
+
+For a full raw CSV of `ARMO` stats, biped slots, keyword-derived material/category fields, value, weight, and armor rating from installed lists, use:
+
+```powershell
+python tools\bordello_armor_stat_scanner.py --scan-installed --output data\installed-armor-stats.csv
+```
+
+Use `py -3` instead of `python` on Windows machines where the launcher is installed but `python` is not on PATH. See `docs/armor-stat-scanner.md` for profile, game-data, and multi-machine instructions.
 
 From the `armor-catalog` folder:
 
