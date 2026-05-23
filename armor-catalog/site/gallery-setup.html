@@ -115,6 +115,24 @@
     </section>
 
     <section class="panel">
+      <h2>Required Browser Permission</h2>
+      <p>
+        In current Chrome and Edge builds, Tampermonkey can show the script as installed while still refusing to execute userscripts.
+      </p>
+      <ol>
+        <li>Open the Tampermonkey extension details page.</li>
+        <li>Enable <strong>Allow User Scripts</strong> if the toggle is shown.</li>
+        <li>If that toggle is not shown, open the browser extensions page and enable <strong>Developer mode</strong>.</li>
+        <li>Reload the catalog preview after changing the setting.</li>
+      </ol>
+      <div class="actions">
+        <a class="button" href="edge://extensions/?id=dhdgffkkebhmkfjojejmpbldmpobfkfo">Open Edge Tampermonkey settings</a>
+        <a class="button secondary" href="edge://extensions/">Open Edge extensions</a>
+        <a class="button secondary" href="chrome://extensions/?id=dhdgffkkebhmkfjojejmpbldmpobfkfo">Open Chrome Tampermonkey settings</a>
+      </div>
+    </section>
+
+    <section class="panel">
       <h2>Manual Install</h2>
       <ol>
         <li>Install or open Tampermonkey/Violentmonkey in this browser.</li>
